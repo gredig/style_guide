@@ -1,0 +1,41 @@
+* {
+  font-size: 16px;
+}
+
+.sg_wrapper {
+  background-color: #eeeeee;
+  height: 100%;
+}
+
+.sg_sections_wrapper {
+  margin: 0 10%;
+}
+
+.sg_code {
+  padding: 15px;
+  background-color: #222222;
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+}
+
+.sg_header_wrapper {
+  position: relative;
+  height: 300px;
+  background-color: #666666;
+}
+
+.sg_header {
+  position: absolute;
+  left: 10%;
+  top: 30%;
+}
+
+.sg_h1 {
+  font-size: 4em;
+  text-shadow: 1px 1px #888888;
+}
+
+.sg_h2 {
+  margin-top: 35px;
+  font-variant: small-caps;
+  font-size: 4em;
+}
