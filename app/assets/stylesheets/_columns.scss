@@ -1,0 +1,199 @@
+.columns {
+  margin: 0 auto 1em auto;
+  padding-left: 1em;
+  width: 98%;
+  overflow: hidden;
+}
+.columns .column_1,
+.columns .column_2,
+.columns .column_3 {
+  float: left;
+  margin-right: 1em;
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+}
+.columns.c3 .column_1,
+.columns.c3 .column_2,
+.columns.c3 .column_3 {
+  width: 31.5%;
+}
+.columns.c2 .column_1,
+.columns.c2 .column_2 {
+  width: 48.1%;
+}
+.columns.c3 .column_3 {
+  margin-right: 0;
+}
+.columns.c2 .column_2 {
+  margin-right: 0;
+}
+.column_content {
+  padding: 15px 20px 20px 20px;
+  line-height: 1.4em;
+}
+.column_header .intro {
+  font-size: 18px;
+}
+
+.columns.c2.box130 .column_1,
+.columns.c2.box130 .column_2,
+.columns.c3.box130 .column_1,
+.columns.c3.box130 .column_2,
+.columns.c3.box130 .column_3 {
+  height: 130px;
+}
+.columns.c2.box130 .column_1,
+.columns.c2.box130 .column_2,
+.columns.c3.box130 .column_1,
+.columns.c3.box130 .column_2,
+.columns.c3.box130 .column_3 {
+  height: 140px;
+}
+.columns.c2.box130 .column_1,
+.columns.c2.box130 .column_2,
+.columns.c3.box130 .column_1,
+.columns.c3.box130 .column_2,
+.columns.c3.box130 .column_3 {
+  height: 150px;
+}
+.columns.c2.box130 .column_1,
+.columns.c2.box130 .column_2,
+.columns.c3.box130 .column_1,
+.columns.c3.box130 .column_2,
+.columns.c3.box130 .column_3 {
+  height: 160px;
+}
+.columns.c2.box130 .column_1,
+.columns.c2.box130 .column_2,
+.columns.c3.box130 .column_1,
+.columns.c3.box130 .column_2,
+.columns.c3.box130 .column_3 {
+  height: 170px;
+}
+.columns.c2.box180 .column_1,
+.columns.c2.box180 .column_2,
+.columns.c3.box180 .column_1,
+.columns.c3.box180 .column_2,
+.columns.c3.box180 .column_3 {
+  height: 180px;
+}
+.columns.c2.box190 .column_1,
+.columns.c2.box190 .column_2,
+.columns.c3.box190 .column_1,
+.columns.c3.box190 .column_2,
+.columns.c3.box190 .column_3 {
+  height: 190px;
+}
+.columns.c2.box200 .column_1,
+.columns.c2.box200 .column_2,
+.columns.c3.box200 .column_1,
+.columns.c3.box200 .column_2,
+.columns.c3.box200 .column_3 {
+  height: 200px;
+}
+.columns.c2.box210 .column_1,
+.columns.c2.box210 .column_2,
+.columns.c3.box210 .column_1,
+.columns.c3.box210 .column_2,
+.columns.c3.box210 .column_3 {
+  height: 210px;
+}
+.columns.c2.box220 .column_1,
+.columns.c2.box220 .column_2,
+.columns.c3.box220 .column_1,
+.columns.c3.box220 .column_2,
+.columns.c3.box220 .column_3 {
+  height: 220px;
+}
+.columns.c2.box230 .column_1,
+.columns.c2.box230 .column_2,
+.columns.c3.box230 .column_1,
+.columns.c3.box230 .column_2,
+.columns.c3.box230 .column_3 {
+  height: 230px;
+}
+.columns.c2.box240 .column_1,
+.columns.c2.box240 .column_2,
+.columns.c3.box240 .column_1,
+.columns.c3.box240 .column_2,
+.columns.c3.box240 .column_3 {
+  height: 240px;
+}
+.columns.c2.box250 .column_1,
+.columns.c2.box250 .column_2,
+.columns.c3.box250 .column_1,
+.columns.c3.box250 .column_2,
+.columns.c3.box250 .column_3 {
+  height: 250px;
+}
+.columns.c2.box300 .column_1,
+.columns.c2.box300 .column_2,
+.columns.c3.box300 .column_1,
+.columns.c3.box300 .column_2,
+.columns.c3.box300 .column_3 {
+  height: 300px;
+}
+.column_1.hdr,
+.column_2.hdr,
+.column_2.hdr {
+  background: transparent;
+  border: none;
+}
+.column_1.hdr h2,
+.column_2.hdr h2,
+.column_2.hdr h2 {
+  background: none repeat scroll 0 0 #62419B;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: normal;
+  padding: 7px 10px;
+}
+.vid_block {
+  background: #F8F8F8;
+  border: 1px solid #CCCCCC;
+  padding: 15px 20px 20px;
+  margin-bottom: 10px;
+  min-height: 100px;
+  p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.3em;
+  }
+  h2 {
+    color: #222;
+  }
+
+}
+.vid_header {
+  background: none repeat scroll 0 0 #62419B;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: normal;
+  padding: 7px 10px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.columns.no_background .column_1, 
+.columns.no_background .column_2, 
+.columns.no_background .column_3 {
+    background: transparent;
+    border: none;
+    float: left;
+    margin-right: 1em;
+}
+
+
+
+/* OLD */
+.columns_2 {
+  margin-top: 20px;
+}
+.columns_2 .column_1 {
+  float: left;
+  width: 450px;
+}
+.columns_2 .column_2 {
+  float: right;
+  width: 430px;
+}

@@ -1,0 +1,218 @@
+#revamp_wrapper {
+  width: $site-width;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -60px;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#revamp_container {
+  position: relative;
+  border-bottom: 1px solid #bbb;
+
+  #lesson_title_and_question {
+    border-bottom: 1px solid #ccc;
+    margin-top: 15px;
+  }
+
+  #section_title {
+    color: #333;
+    font-weight: bold;
+    padding: 10px 0px 10px 0px;
+    overflow: auto;
+    ul {
+      float: right;
+
+      li {
+        display: inline-block;
+        margin-left: 15px;
+      }
+    }
+
+    h1 {
+      display: inline;
+      font-size: 1.2em;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.revamp_sidebar {
+  height:100%;
+  width: 120px;
+  position:absolute;
+  min-height: 525px;
+  border-right: 1px solid #ccc;
+
+  .side_bar_menu {
+    padding-bottom: 5px;
+    width: 118px;
+    float: right;
+
+    h3 {
+      text-align: left;
+      margin: 0px auto 0 2px;
+      padding: 5px 5px 5px 3px;
+      font-size: 15px;
+      line-height: 18px;
+      color: #333;
+      font-weight: normal;
+      font-family: "UniversLTW01-67BoldCn", helvetica, arial, sans-serif;
+      font-variant: small-caps;
+    }
+
+    ul {
+      border-top-left-radius: 3px;
+      -moz-border-radius-topleft: 3px;
+
+      li {
+        font-family:"UniversLTW01-57Condense 723821", helvetica, arial, sans-serif;
+        border-bottom: 1px solid #ddd;
+
+        a, span.completed_assessment {
+          padding: 7px 5px 5px 0;
+          display: block;
+          height: 18px;
+          width: 113px;
+          font-size: 14px;
+          color: #522e91;
+
+          img {
+            float: left;
+            padding-right: 3px;
+            vertical-align: middle;
+          }
+        }
+
+        span.completed_assessment {
+          font-style: italic;
+          color: #9a9a9a;
+        }
+
+        a.two_words, span.two_words {
+          padding-top: 6px;
+          height: 31px;
+          line-height: 15px;
+
+          img {
+            margin-top: 5px;
+            margin-bottom: 7px;
+          }
+        }
+
+        a.active_tab, a:hover, a.active_tab.two_words, a.two_words:hover {
+          background-color: #eee;
+        }
+      }
+
+      li:first-child {
+        border-bottom: 2px solid #cccccc;
+        margin-top: 0;
+      }
+
+      li:last-child {
+        border-bottom-style: none;
+      }
+    }
+  }
+
+  .side_bar_menu:first-child {
+    margin-top: 0px;
+
+    ul {
+      margin-top: 0px;
+    }
+  }
+}
+.revamp_main{
+  padding-left: 120px;
+  padding-top: 1px;
+  width: 870px;
+  min-height: 1420px;
+}
+
+.revamp_main_extra_pad {
+  padding-left: 10px;
+  padding-top: 10px;
+  min-height: 600px;
+  position: relative;
+}
+
+.view_notice {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 46px;
+  height: 40px;
+  background: url('icon_shared_view.jpg') no-repeat top;
+  z-index: 5;
+}
+
+.teacher_only_view {
+  background-image: url('icon_teacher_view.jpg');
+}
+
+#revamp_header {
+  > .header, .program_banner, .header_bottom { @include page-width; }
+  > .program_banner, .program_wrapper { height: 51px; }
+  .program_banner {
+      position: relative;
+      height: 45px;
+      width: 990px;
+
+      span {
+        font-size: 22px;
+        padding-left: 5px;
+        line-height: 46px;
+        color: #FFF;
+      }
+
+      li {
+        color: #FFF;
+
+        a{
+          color: #FFF;
+        }
+      }
+  }
+
+  .program_banner a.choose {
+      font-weight: bolder;
+      color: #FFFFFF;
+      padding: 6px 10px;
+      position: absolute;
+      right: 20px;
+      text-shadow: 1px 1px 1px #000000;
+      top: 14px;
+      font-size:12px;
+  }
+  .program_wrapper a.choose:hover,
+  .program_wrapper a.choose:active{
+    background-color:#444;
+  }
+}
+
+#reading_connection_content {
+  padding-top: 1px;
+  position: relative;
+}
+
+.assessments {
+  min-height: 600px;
+}
+
+.banner_home_icon {
+  margin: 3px 15px 0 10px;
+  float: left;
+}
+
+.student_lesson_header.revamp {
+  margin-left: 15px;
+}

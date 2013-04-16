@@ -1,0 +1,499 @@
+@mixin field-border {
+  padding: 3px;
+  border: 2px solid #ccc;
+}
+
+@mixin grad_box {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-box-shadow: 0px 2px 3px #999999;
+  -webkit-box-shadow: 0px 2px 3px #999999;
+  background: url("/assets/background_form_container.png") repeat-x scroll right top #EFEFEF;
+  border: 1px solid #CCCCCC;
+  position: relative;
+}
+
+input:focus {
+  background-color: #FFFFF0;
+  border: 2px solid #aaa;
+}
+
+input.string,
+input.password,
+input.numeric,
+input.textinput {
+  color: #222;
+  font-size: 93%;
+  padding: 4px;
+  width: 220px;
+  border: 1px solid #aaa;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+input.small {
+  @include field-border;
+  width: 60px;
+}
+
+label {
+  display: inline-block;
+  overflow: hidden;
+  &.multi_line {
+    padding-top: 0 !important;
+  }
+}
+div.input.text {
+  height: auto;
+}
+div.input {
+  padding: 4px 0;
+  overflow: hidden;
+  margin-bottom:5px;
+
+  >label {
+    color: #555;
+    display: block;
+    float: left;
+    font-weight: bold;
+    padding-top: 5px;
+    width: 120px;
+    font-size:12px;
+  }
+  >label.boolean {
+    width: auto;
+    position: relative;
+    top: -4px;
+  }
+
+  input[type="checkbox"] {
+    float: left;
+  }
+}
+
+input.submit_button, a.submit_button {
+  -moz-border-radius:4px;
+  -webkit-border-radius: 4px;
+  -moz-box-shadow: 1px 1px 5px #999999;
+  -webkit-box-shadow: 1px 1px 5px #999999;
+  background-color: #333333;
+  background-repeat: repeat-x;
+  border: 1px solid #AAAAAA;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+  margin-top: 10px;
+  padding: 2px 10px 4px;
+  position: relative;
+  text-decoration: none;
+  text-shadow: 0 1px 3px #000000;
+  font-size: 100%;
+  font-size: 15px;
+}
+
+a.submit_button {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.purple.submit_button {
+  background-color: $tci-purple;
+  border-color: $tci-purple;
+}
+submit_button:hover {
+  background-color: #673bb5;
+}
+
+a.cancel_button {
+   /*
+   -moz-border-radius: 4px 4px 4px 4px;
+   -moz-box-shadow: 1px 1px 5px #999999;
+   -webkit-border-radius: 4px 4px 4px 4px;
+   -webkit-box-shadow: 1px 1px 5px #999999;
+   background-color: #666666;
+   border: 1px solid #444444;
+   text-shadow: 0 1px 3px #000000;
+   */
+  color: $link-purple;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 15px;
+  margin-top: 10px;
+  padding: 3px 10px 3px;
+  position: relative;
+  text-decoration: none;
+  top: 7px;
+}
+
+@-moz-document url-prefix() {
+    a.cancel_button {
+      line-height: 21px;
+      top: 6px;
+    }
+}
+
+
+
+a.cancel_button:hover {
+  background-color:#ccc;
+}
+
+
+.account_settings {
+  width: 420px;
+  margin: 20px 0;
+}
+
+div.input > span.hint {
+  display: block;
+  padding-left: 120px;
+  font-size: 11px;
+  padding-top: 5px;
+}
+.wide_page div.input > span.hint{
+  padding-left:0;
+}
+
+div.input > span.error {
+  color: red;
+  display: block;
+  margin-left: 120px;
+  padding: 2px 0;
+  font-size: 12px;
+}
+.form_table {
+   td {
+     min-width: 200px;
+     padding-left: 20px;
+   }
+}
+
+.form_narrow label{
+  display: block;
+  float: none;
+  padding: 4px 0;
+  width: auto;
+  font-size: 12px;
+  font-weight:bold;
+}
+
+.form_narrow {
+  div.input {
+    &.boolean { height: 30px; }
+    &.text { height:auto; }
+    > label {
+      display: block;
+      float: none;
+      padding: 4px 0;
+      width: auto;
+      font-size: 12px;
+    }
+    > span.error {
+      margin-left: 0;
+    }
+  }
+  textarea {
+    height: 150px;
+    width: 400px;
+  }
+  &.wide_page textarea{
+    height:65px;
+    width:83%;
+  }
+}
+
+
+
+
+div.form_container {
+  @include grad-box;
+  margin: 0 auto;
+  padding: 20px;
+  width: 370px;
+
+  h1{
+    margin-top:0;
+    padding-bottom:16px;
+  }
+  label{
+    line-height:1.3em;
+  }
+
+  h2 {
+    border-bottom: 1px solid #CCCCCC;
+    color: #555555;
+    font-size: 160%;
+    font-weight: normal;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    font-weight: bold;
+  }
+
+  div.form_messaging{
+    margin-bottom: 10px;
+    border-bottom: 1px solid #CCCCCC;
+    h2 {
+      margin-bottom:5px;
+      font-size: 130%;
+    }
+    p {
+      line-height:1.5em;
+    }
+  }
+}
+
+div.tool_tips_box {
+  position: absolute;
+  width: 285px;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  font-size: 12px;
+  padding: 5px;
+  line-height: 17px;
+  box-shadow: 0px 0px 10px #dadada;
+
+  &.sign_in_tips {
+    top: 130px;
+    left: 395px;
+  }
+
+  &.forgotten_password {
+    bottom: 30px;
+    left: 205px;
+    display: none;
+  }
+
+  ul {
+    margin: 10px 0;
+    list-style-type: disc;
+    list-style-position: inside;
+
+    li {
+      margin: 5px 0;
+    }
+  }
+}
+
+#add_teacher .form_container{
+  border:none;
+  background:transparent;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  box-shadow: none;
+  margin:0;
+}
+div.form_container.left{
+  margin: 0;
+}
+div.form_container .account {
+  color: #555555;
+  font-size: 12px;
+  font-weight: bold;
+  padding:12px 0;
+}
+
+div.form_container p.sign_up_code {
+  line-height: 17px;
+}
+
+div.form_container span.label {
+ color: #555555;
+ display: block;
+ float: left;
+ width: 120px;
+}
+div.form_container span.note {
+  font-weight: normal;
+  font-size: 13px;
+  float: none;
+}
+.form_sideways form {
+  overflow: hidden;
+}
+.sideways {
+  float: left;
+}
+.sideways + .sideways {
+  margin-left: 30px;
+}
+table.multiple_choice {
+  td {
+    padding: 5px 0;
+    vertical-align: middle;
+    input.string {
+      width: 400px;
+    }
+
+  }
+
+}
+.input_400 input {
+  width: 400px;
+}
+.input_numeric input {
+  width: 40px;
+}
+input.short {
+  width: 20px;
+}
+.form_wide textarea {
+  width: 900px;
+  display: block;
+  height: 100px;
+}
+.form_wide label {
+  display: block;
+  width: 970px!important;
+  font-size: 14px !important;
+  margin-bottom: 5px;
+}
+.form_wide label span {
+  font-weight: normal;
+  padding-left: 10px;
+}
+.large_text_area textarea {
+  margin: 20px auto;
+  padding: 10px;
+  width: 830px;
+  display: block;
+  height: 350px;
+}
+
+
+
+
+
+/* Horizontal Form used on student search */
+.hform {
+   background: none repeat scroll 0 0 #EEEEEE;
+   margin-bottom: 9px;
+   overflow: hidden;
+   padding: 5px 0 5px 12px;
+
+   .input_submit {
+     margin-left: 10px;
+   }
+}
+.hform label{
+  font-size:12px;
+  line-height:1.5em;
+}
+
+.hform input.text_input {
+  border: 1px solid #AAAAAA;
+  -moz-border-radius: 4px 4px 4px 4px;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  color: #222222;
+  font-size: 93%;
+  padding: 3px;
+  margin-left: 4px;
+  margin-right: 12px;
+}
+.hform input.short_input {
+  width: 20px;
+}
+.hform input.name {
+  width: 100px;
+}
+.hform input.email {
+  width: 180px;
+}
+.hform input,
+.hform label {
+  float: left;
+}
+.hform label {
+  position: relative;
+  top: 4px;
+}
+.hform td{
+  vertical-align:middle;
+}
+.form_container_description {
+  margin: 20px auto;
+  width: 412px;
+}
+.form_container_description p {
+  line-height: 1.3em;
+}
+
+ul.radio_options{
+
+}
+ul.radio_options input {
+  float: left;
+  display: block;
+  margin-right: 10px;
+}
+ul.radio_options label {
+  float: left;
+  display: block;
+}
+ul.radio_options li {
+  display: block;
+  padding: 6px 0;
+  clear: both;
+  border-bottom: 1px dotted #ccc;
+}
+
+div.input.check_boxes {
+  height: auto;
+  overflow: visible;
+}
+div.input.check_boxes ul {
+  display: block;
+  clear: both;
+}
+div.input.check_boxes ul li {
+  padding: 3px 0;
+}
+.form_highlight_box {
+  background: #f0f0f0;
+  padding: 7px 5px 5px 8px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+}
+
+#user_new div.input > span.error {
+  color: red;
+  display: block;
+  margin-left: 0px;
+  padding: 2px 0;
+  font-size: 12px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.multi-part-form {
+  margin-bottom: 10px;
+}
+.bold_labels label{
+  font-weight:bold;
+}
+input.password_field {
+  background-image: url("/assets/input_password_background.png");
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+
+#caps_warning {
+  border: 1px solid #DDDDDD;
+  padding: 2px 5px;
+  padding-right: 0px;
+  margin: -5px 0px 10px 229px;
+  width: 114px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  color: #444;
+  display: none;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 22px;
+  font-variant: small-caps;
+
+  img {
+    vertical-align: middle;
+  }
+}
+

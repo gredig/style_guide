@@ -1,0 +1,123 @@
+.nav_menu {
+  background-color: #AAAAAA;
+  background-image: url("/assets/bg-tabs-dark.png");
+  background-position: 0 1px;
+  background-repeat: repeat-x;
+  font-size: 14px;
+  height: 32px;
+  ul.drop_down_menu.right{
+    float:right;
+  }
+  ul.drop_down_menu {
+    li {
+      background: #fff;
+      &:hover {
+        background: #303031;
+        a { color:#fff; }
+        ul li a { color:$tci-purple; }
+        li {
+          background:#fff;
+          &:hover { background:#eee; }
+        }
+      }
+      a {
+        display: block;
+        text-decoration: none;
+        line-height: 30px;
+        white-space: nowrap;
+        color:#ddd;
+      }
+    }
+    >li {
+      float: left;
+      position: relative;
+      display: block;
+      background-color: #424345;
+      text-shadow: 1px 1px 1px #222; 
+      background-image: url(/assets/bg-tabs-dark.png);
+      background-repeat: repeat-x;
+      height: 30px;
+      padding: 0 10px;
+      border: 1px solid #aaa;
+      border-bottom:none ;
+      +li { border-left: none; }
+      >ul {
+        display: none;
+        position: absolute;
+        top: 29px;
+        left: -1px;
+        margin-top: 1px;
+        border: 1px solid #ccc;
+        z-index: 1000;
+        -moz-box-shadow: 0px 5px 6px #555;
+        -webkit-box-shadow: 0px 5px 6px #555;
+        box-shadow: 0px 5px 6px #555;
+        >li { text-shadow:none;
+          +li { border-top: 1px solid #ccc;}
+          >a { padding: 0 11px; color:$tci-purple;}
+        }
+      }
+    }
+    >li.selected{
+      background:#303031;
+      a{
+        color: #fff;
+      }
+    }
+    >li:hover >ul { display: block; }
+  }
+}
+.nav_menu ul.drop_down_menu li.lesson_location {
+    width:412px;
+    height:31px;
+    background:url(/assets/lesson_location.png);
+    background-repeat:no-repeat;
+    border-left:none;
+    padding:0;
+}
+.nav_menu ul.drop_down_menu li.lesson_location span {
+    color: #DDDDDD;
+    display: block;
+    float: left;
+    height: 29px;
+    line-height: 29px;
+    overflow: hidden;
+    padding-left: 17px;
+    max-width:412px;
+}
+.nav_menu ul.drop_down_menu li.lesson_location:hover {
+    background:url(/assets/lesson_location.png);
+}
+
+/* TOGGLE NAV STYLE */
+ul.toggle_nav {
+  
+}
+ul.toggle_nav li {
+  float: left;
+}
+ul.toggle_nav li a:link,
+ul.toggle_nav li a:visited {
+  display: block;
+  float: left;
+  width: 150px;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid #bbb;
+  margin-bottom: 15px;
+  margin-right: -1px;
+  font-weight: bold;
+  font-size:12px;
+}
+ul.toggle_nav li a:hover,
+ul.toggle_nav li a:active {
+  background: #f8f8f8;
+}
+
+ul.toggle_nav li.selected a:link,
+ul.toggle_nav li.selected a:visited,
+ul.toggle_nav li.selected a:hover,
+ul.toggle_nav li.selected a:active {
+  background-color: #eee;
+}
+

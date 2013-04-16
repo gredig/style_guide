@@ -1,0 +1,294 @@
+/* Sticky Footer - http://ryanfait.com/resources/footer-stick-to-bottom-of-page */
+
+html, body {
+  height: 100%;
+}
+#wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -70px;
+  width: 990px;
+}
+#push {
+  height: 70px; /* .push must be the same height as .footer */
+}
+#footer {
+  height: 50px;
+  width: 990px;
+  position: relative;
+  padding-top: 10px;
+  font-size: 12px;
+  background-image: url('/assets/footer_background.jpg');
+  background-repeat: repeat-x;
+  color: #323232;
+  margin: 0px auto;
+}
+
+/* END Sticky Footer */
+@mixin page-width {
+  width: 990px;
+  margin: 0 auto;
+}
+
+#header {
+  background: url("/assets/bg-page.png") repeat-x scroll 0 0 white;
+  padding-bottom: 5px;
+  > .header, .program_banner, .header_bottom { @include page-width; }
+  > .program_banner, .program_wrapper { height: 51px; }
+  > .program_wrapper{ background: #aaa url(/assets/bg-page-sub-striped.png) repeat-x;}
+  .program_banner {
+      position: relative;
+      height: 50px;
+      width: 980px;
+
+      span {
+        font-size: 22px;
+        padding-left: 5px;
+        line-height: 46px;
+        color: #FFF;
+      }
+  
+      li {
+        color: #FFF;
+
+        a{
+          color: #FFF;
+        }
+      }
+  }
+
+  .program_banner a.choose {
+      font-weight: bolder;
+      color: #FFFFFF;
+      padding: 6px 10px;
+      position: absolute;
+      right: 20px;
+      text-shadow: 1px 1px 1px #000000;
+      top: 14px;
+      font-size:12px;
+  }
+  .program_wrapper a.choose:hover,
+  .program_wrapper a.choose:active{
+    background-color:#444;
+  }
+}
+
+#student_header {
+  > .header, .program_banner, .header_bottom { @include page-width; }
+  > .program_banner, .program_wrapper { height: 51px; }
+  > .program_wrapper{ background: #aaa url(/assets/bg-page-sub-striped.png) repeat-x;}
+  .program_banner {
+    position: relative;
+    height: 49px;
+    width: 980px;
+
+    span {
+      padding-left: 16px;
+      line-height: 53px;
+      color: #FFF;
+      text-shadow: -1px -1px 0px #595959;
+    }
+
+    li {
+      color: #FFF;
+
+      a{
+        color: #FFF;
+      }
+    }
+  }
+
+  .program_banner a.choose {
+    font-weight: bolder;
+    color: #FFFFFF;
+    padding: 6px 10px;
+    position: absolute;
+    right: 20px;
+    text-shadow: 1px 1px 1px #000000;
+    top: 14px;
+    font-size:12px;
+  }
+  .program_wrapper a.choose:hover,
+  .program_wrapper a.choose:active{
+    background-color:#444;
+  }
+}
+.sub_wrapper{
+  background-color:#d0d0d0;
+}
+.sub_wrapper.dark{
+  background-color: #555;
+  margin-top:-1px;
+  
+  .nav_menu{
+    background-image:none;
+    background-color:transparent;
+    font-size: 14px;
+    height: 32px;
+    padding-top: 17px;
+    
+  }
+}
+
+#main_student {
+  @include page-width;
+}
+
+#main { 
+  padding-top:7px;
+  @include page-width;
+  margin-top: 10px; 
+  margin-bottom:20px; 
+}
+
+.header {
+  position: relative;
+  overflow: hidden;
+  height: 45px;
+  font-size: 13px;
+}
+
+#user_box {
+  overflow: hidden;
+  position: absolute;
+  right: 7px;
+  top: 0;
+  color: #333333;
+
+  li {
+    float: left;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  li a{
+    float:left;
+    display:block;
+    line-height: 45px;
+  }
+
+  li.header_user_name {
+    max-width: 255px;
+    height: 45px;
+    white-space: nowrap;
+    a {
+      max-width: 255px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    &.trial_user_name {
+      max-width: 105px;
+      height: 45px;
+
+      a {
+        max-width: 105px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+  }
+
+  li span {
+    padding:3px 0;
+    display:block;
+  }
+  li + li {
+    margin-left: 10px;
+    padding-left: 10px;
+  }
+  li.toggle a {
+    width: 90px;
+    text-align: center;
+    background: #ccc;
+    font-weight: bold;
+    position: relative;
+  }
+  li.toggle {
+    margin: 0;
+    padding: 0;
+  }
+  li.toggle.selected a {
+    background: #333;
+    color: #fff;
+  }
+  li.toggle.first {
+    margin-left: 15px;
+    margin-right: -1px;
+  }
+  
+}
+
+#student_user_box {
+  vertical-align: center;
+  line-height: 21px;
+  display: inline;
+  overflow: hidden;
+  position: absolute;
+  right: 16px;
+  top: 14px;
+  
+  li {
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin-left: 17px;
+
+    a {
+      display: block;
+      height: 22px;
+    }
+
+    #message_count {
+      text-align: center;
+      line-height: 14px;
+      background-color: #df1712;
+      border-radius: 8px;
+      border: 2px solid #FFF;
+      height: 14px;
+      width: 14px;
+      position: absolute;
+      top: 0px;
+      left: 14px;
+    }
+  }
+
+  li a.head_links {
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 500;
+  }
+
+  li a.head_links.username {
+    text-decoration: underline;
+  }
+
+  li a img {
+      vertical-align: middle;
+  }
+
+  li a.icon {
+    padding-top: 4px;
+  }
+}
+
+ul.footer_links {
+
+  li {
+    display: inline;
+    margin-left: 15px;
+  }
+
+  li:first-child {
+    margin-left: 0px;
+  }
+
+  li a {
+    color: #6d5398;
+  }
+}
+
+
+

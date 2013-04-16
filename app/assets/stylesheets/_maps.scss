@@ -1,0 +1,105 @@
+#map_default {
+  position: relative;
+  margin: 20px auto;
+  height: 1250px;
+  overflow: hidden;
+}
+
+#map_small_box {
+  background-color: #fff;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#map_small_box img {
+  margin: auto;
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+#map_full_box {
+  width: 900px;
+  height: 500px;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#map_default #zoom_nav {
+  display: none;
+  z-index: 5;
+  position: absolute;
+  width: 210px;
+  height: 155px;
+  bottom: 20px;
+  right: 20px;
+  background: url('nav_menu_back.png') repeat;
+  border-radius: 10px;
+  border: 1px solid #dedede;
+}
+
+
+.nav_buttons {
+  display: block;
+  background-color: #f5f5f5;
+  width: 35px;
+  height: 35px;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  position: absolute;
+}
+
+#zoom_in {
+  background: #f5f5f5 url('nav_zoom_in.png') no-repeat center;
+  top: 40px;
+  left: 20px;
+  cursor: pointer;
+}
+#zoom_out {
+  background: #f5f5f5 url('nav_zoom_out.png') no-repeat center;
+  top: 80px;
+  left: 20px;
+  cursor: default;
+  opacity: 0.3;
+  filter:alpha(opacity=30);
+}
+#move_up {
+  background: #f5f5f5 url('nav_pan_up.png') no-repeat center;
+  top: 20px;
+  left: 110px;
+  cursor: default;
+  opacity: 0.3;
+  filter:alpha(opacity=30);
+}
+#move_left {
+  background: #f5f5f5 url('nav_pan_left.png') no-repeat center;
+  top: 60px;
+  left: 70px;
+  cursor: default;
+  opacity: 0.3;
+  filter:alpha(opacity=30);
+}
+#move_right {
+  background: #f5f5f5 url('nav_pan_right.png') no-repeat center;
+  top: 60px;
+  left: 150px;
+  cursor: default;
+  opacity: 0.3;
+  filter:alpha(opacity=30);
+}
+#move_down {
+  background: #f5f5f5 url('nav_pan_down.png') no-repeat center;
+  top: 100px;
+  left: 110px;
+  cursor: default;
+  opacity: 0.3;
+  filter:alpha(opacity=30);
+}
+

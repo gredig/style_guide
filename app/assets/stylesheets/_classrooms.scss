@@ -1,0 +1,217 @@
+.dynamic_students {
+  position: relative;
+}
+.classroom_limits {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 250px;
+  height: 150px;
+}
+
+div.classroom_students {
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+
+  .new_student_form {
+    float: left;
+    width: 255px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fafafa;
+    h3 {
+      margin-bottom:10px;
+    }
+  }
+  .students {
+    margin-left: 300px;
+    width: 680px;
+  }
+}
+
+div#manage_classes, div#manage_programs {
+ ul.classrooms, ul.programs {
+    width: 600px;
+    padding-left: 5px;
+
+    li {
+      position: relative;
+      border-bottom: 1px dotted #ccc;
+      padding: 0.5em 0;
+      background: #fff;
+
+      .actions {
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        width: 100px;
+        text-align: right;
+      }
+    }
+  }
+
+  table.form_table td select {
+    width: 400px;
+  }
+}
+
+div#add_student_classes table.form_table td select {
+    width: 400px;
+}
+td.result_in_progress {
+    background-color:#FDFFA1;
+    border-bottom: 1px solid #fff;
+}
+.key {
+  line-height: 15px;
+  overflow: hidden;
+}
+
+.key img {
+  float: left;
+  margin-right: 5px;
+}
+
+.teacher_classes {
+
+  #add_student_instructions {
+    height: 157px;
+    padding: 19px;
+    background: #fdffcd url('drop_shadow_down.png') repeat-x top;
+    border-bottom: 3px solid #d9deae;
+    border-top: 2px solid #c7caac;
+    border-right: 1px solid #ebf0cd;
+    display: none;
+
+    span {
+      font-size: .9em;
+      color: #28270f;
+    }
+
+    .large {
+      font-size: 1em;
+    }
+    .add_student_columns {
+      margin-top: 20px;
+      color: #63724b;
+
+      span {
+        font-weight: bold;
+        color: #28270f;
+      }
+
+      p {
+        margin-top: 20px;
+        font-size: .9em;
+      }
+    }
+  }
+
+  #manage_classes {
+    width: 100%;
+    text-align: center;
+    color: #323232;
+    vertical-align: middle;
+
+    a {
+      line-height: 38px;
+    }
+
+    span {
+      vertical-align: middle;
+    }
+
+    img {
+      margin-left: 10px;
+      line-height: 38px;
+      vertical-align: middle;
+    }
+
+    thead tr {
+      background-color: #515151;
+      vertical-align: middle;
+      color: #fff;
+      font-weight: 500;
+      font-size: 1em;
+      line-height: 2.8em;
+      border-bottom: 1px solid #cbcbcb;
+    }
+
+    td.left {
+      text-align: left;
+    }
+
+    tr {
+      border-bottom: 1px solid #cbcbcb;
+    }
+
+    tbody tr {
+      font-size: 14px;
+      line-height: 38px;
+    }
+  }
+}
+
+a.manage_button {
+  height: 26px;
+  width: 90px;
+  display: block;
+  background: #F2f3f5 url('add_class_link_back.png') repeat-x bottom;
+  border: 1px solid #919191;
+  padding-left: 2px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  text-shadow: 0px 1px 1px #FFF;
+  font-size: 13px;
+  color: #2e2e2e;
+  -moz-box-shadow:    0px 1px 1px 0px #ccc;
+  -webkit-box-shadow: 0px 1px 1px 0px #ccc;
+  box-shadow:         0px 1px 1px 0px #ccc;
+
+  img {
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+
+  span {
+    vertical-align: middle;
+    height: 26px;
+    line-height: 26px;
+    display: inline-block;
+  }
+}
+
+a.manage_button.sign_up_trial_button {
+  line-height: 26px;
+  margin-top: 10px;
+}
+
+a.manage_button.maps {
+  border: 1px solid #c1c1c1;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #6e6e6e;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  box-shadow: 0 1px 0 0 #cccccc;
+  height: auto;
+  width: 65px;
+  padding-left: 15px;
+
+  img {
+    margin-right: 0;
+  }
+
+  span {
+    display: inline;
+    color: #6d5398 !important;
+    height: auto;
+    font-weight: bold !important;
+    font-size: 15px !important;
+    line-height: 17px !important;
+    margin-left: 3px;
+  }
+}
+

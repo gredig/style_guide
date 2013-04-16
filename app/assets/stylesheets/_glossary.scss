@@ -1,0 +1,213 @@
+.definition {
+  display: none;
+  color: #009900;
+}
+
+.glossary_list {
+  display: none
+}
+
+.glossary {
+  color: #005BA4;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.glossary_image {
+  position: absolute;
+  top: 50px;
+  left: 340px;
+  width: 135px;
+  padding: 20px;
+  border: 1px solid #323232;
+  background-color: #fff;
+  z-index: 3;
+}
+
+/**** Glossary terms page  ****/
+
+#glossary_letters, #glossary_letters_teacher, #bio_letters {
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px dotted #c9c9c9;
+  padding: 20px 0px 20px 0px;
+  margin-left: 10px;
+
+  a {
+    line-height: 30px;
+    text-align: center;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    margin-left: -2px;
+  }
+
+  a.selected_glossary_letter, a.selected_bio_letter {
+    background: url('selected_letter_back.png') no-repeat;
+    color: #FFF;
+  }
+}
+
+#glossary_letters_teacher {
+  margin-left: 0;
+  padding: 20px 0;
+
+  a {
+    margin-left: -2px;
+  }
+}
+
+#glossary_words, #glossary_words_teacher {
+  margin: 15px 17px 40px 10px;
+  padding: 20px 10px;
+  position: relative;
+
+  div {
+    margin-bottom: 25px;
+    line-height: 20px;
+    color: #8c8c8c;
+
+    span {
+      font-weight: bold;
+      margin-right: 10px;
+      color: #323232;
+    }
+
+    img {
+      margin: 20px 0px 0px 50px;
+    }
+  }
+}
+
+#glossary_words_teacher {
+  margin: 30px 0px;
+}
+
+#current_letter_bubble {
+  background: url('icon_bubble_blank_white.png') no-repeat;
+  height: 37px;
+  width: 37px;
+  position: absolute;
+  top: -20px;
+  left: -10px;
+  line-height: 37px;
+  text-align: center;
+}
+
+#card_holder {
+  margin: 50px auto;
+  height: 359px;
+  width: 600px;
+  position: relative;
+  -webkit-perspective: 900px;
+  -moz-perspective: 900px;
+  -o-perspective: 900px;
+  perspective: 900px;
+
+  #card {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+  }
+
+  #card_alt {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
+    figure {
+      background: #FFF url('index_card.png') no-repeat;
+      border: 1px solid #999;
+      display: block;
+      position: absolute;
+      padding-top: 159px;
+      text-align: center;
+      font-family: arial, helvetica, sans-serif;
+      color: #333;
+      width: 100%;
+      height: 200px;
+      margin: 0;
+    }
+
+    .front_alt {
+      font-size: 30px;
+      z-index: 1;
+    }
+
+    .back_alt {
+      font-size: 18px;
+    }
+  }
+
+  #card figure {
+    border: 1px solid #999;
+    display: block;
+    position: absolute;
+    padding-top: 159px;
+    text-align: center;
+    font-family: arial, helvetica, sans-serif;
+    color: #333;
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  #card .front {
+    background: #FFF url('index_card.png') no-repeat;
+    font-size: 30px;
+  }
+
+  #card .back {
+    background: #FFF url('index_card.png') no-repeat;
+    font-size: 18px;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+
+  #card.flipped {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+
+  #button_holder {
+    position: absolute;
+    right: 10px;
+    bottom: -30px;
+    z-index: 10;
+  }
+
+  #flip_button {
+    cursor: pointer;
+    font-variant: small-caps;
+    font-family: arial, helvetica, sans-serif;
+    color: #333;
+    text-decoration: underline;
+  }
+}
+
+#view_alternate_link {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+
+
+

@@ -1,0 +1,25 @@
+@import "_reset.scss";
+
+html, body { height: 100%; }
+
+body { overflow: hidden; }
+
+object:focus { outline: none; }
+
+#flashContent { display: none; }
+
+div.msg{
+  background:#FEFAC9;
+  border:1px solid #C9C394;
+  padding:10px;
+  font-size:16px;
+  margin:10px 0;
+  text-align:center;
+  line-height:1.5em;
+  margin:50px;
+  font-family:helvetica,Arial,sans-serif;
+}
+div.msg a{
+  text-decoration:underline;
+}
+

@@ -1,0 +1,327 @@
+
+.tablebox {
+  border: 1px solid #bbb;
+  padding: 1px;
+  margin-bottom: 20px;
+}
+
+table.tabular_data {
+  width: 100%;
+  line-height:1.3em;
+}
+table.tabular_data td table{
+  width:100%;
+  td{
+    border-left:none;
+  }
+}
+
+table.tabular_data td.buttons{
+  white-space: nowrap;
+  text-align:center;
+}
+
+table.tabular_data td.name{
+    width:120px;
+    font-weight:bold;
+    color:#555;
+}
+table.tabular_data td.edit_delete {
+   width:90px;
+}
+
+table.tabular_data td.email{
+    width:180px;
+}
+
+table.tabular_data.small_text tbody td {
+  font-size: 12px;
+}
+
+table.tabular_data tr#possible_points {
+  border-bottom: 1px solid #aaa;
+}
+table.tabular_data tr.program_return {
+  background: #FEDCD9!important;
+  td{
+    background: #FEDCD9!important;
+  }
+}
+
+table.tabular_data thead tr td {
+  background-image: url("/assets/bg-table-hdr.png");
+  background-color: $border-gray;
+  font-weight: bold;
+  text-shadow: 1px 1px #eee;
+  vertical-align: middle;
+  font-size: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+table.tabular_data thead tr{
+  background-image: url("/assets/bg-table-hdr.png");
+  background-color: $border-gray;
+}
+
+table.tabular_data thead tr.sub td {
+  background-image: url("/assets/bg-table-hdr-stripes.png");
+  background-color: $border-gray;
+  font-weight: bold;
+  text-shadow: 1px 1px #eee;
+}
+
+table.tabular_data td {
+  padding: 8px 10px;
+  vertical-align: middle;
+  font-size:13px;
+}
+table.tabular_data td.actions {
+  width:200px;
+  white-space:nowrap;
+}
+
+table.tabular_data td.center {
+  text-align: center;
+}
+
+table.tabular_data td.lesson_name {
+  font-weight: bold;
+}
+
+table.tabular_data td.student_name {
+  width: 130px;
+  display: block;
+  white-space: nowrap;
+}
+
+table.tabular_data tr.average_score {
+  border-top: 1px solid #AAAAAA;
+  background: #eee;
+}
+
+table.tabular_data td span.light {
+  color: #999;
+  font-size: 11px;
+}
+
+table.tabular_data tr:last-child td {
+  border-bottom: none;
+}
+
+table.tabular_data tr.even td {
+  background-color: #F0F0F0;
+}
+
+
+table.tabular_data tbody td {
+  border-left: 1px solid #DEDEDE;
+}
+
+table.tabular_data tbody tr td:first-child {
+  border-left: none
+}
+
+table.tabular_data tbody tr td.title {
+  width: 35%;
+}
+
+table.tabular_data tbody tr.classroom_total td {
+  border-bottom: 2px solid #777;
+  padding: 4px 10px;
+  background-color: #fafafa;
+}
+
+table.tabular_data tbody tr td a img {
+  vertical-align: middle;
+}
+
+h1.table_header.underline {
+  border-bottom: 4px solid #CCCCCC;
+  margin-bottom: 13px;
+  padding-bottom: 5px;
+  color: #555;
+}
+
+table.tabular_data tbody tr.selected td {
+  background-color: #eee;
+}
+
+table.tabular_data tbody tr.selected td.name a {
+  text-decoration: none;
+  color: #555;
+}
+a.table_head_button:link,
+a.table_head_button:visited {
+  font-size: 12px;
+  text-shadow: none;
+  padding: 3px 8px;
+  border: 1px solid #aaa;
+  padding-top: 5px;
+  text-decoration: none;
+  background: #ddd;
+  font-weight: normal;
+  border-bottom-color: #eee;
+  border-right-color: #eee;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+a.table_head_button:hover,
+a.table_head_button:active {
+  background-color: #583597;
+  color: #fff;
+}
+
+table.tabular_data tbody td ul li {
+  line-height: 1.5em;
+}
+
+table.tabular_data td.border_left_center {
+  border-left: 1px solid #aaa;
+  text-align: center;
+}
+table.tabular_data.light {
+  font-size: 11px;
+  thead tr td {
+    background: #f5f5f5;
+    border: medium none;
+    color: #666666;
+    font-size: 11px;
+    padding: 5px 8px;
+    font-weight: normal;
+    border-bottom: 1px solid #ddd;
+  }
+  tr.even {
+    background: #fff;
+  }
+  td.name {
+    font-weight: bold;
+    font-size: 12px;
+  }
+  tr:hover {
+  }
+  tbody td {
+    border: none;
+    border-bottom: 1px dotted #ccc;
+  }
+  .actions a {
+    font-size: 11px;
+  }
+  td.first_column {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+}
+table.tabular_data.hover {
+  tbody tr:hover {
+    background: #f8f8f8;
+  }
+}
+table.tabular_data.outline{
+  border-top:1px solid #ddd;
+  border-right:1px solid #ddd;
+  td{
+    border-left:1px solid #ddd !important;
+    border-bottom:1px solid #ddd !important;
+    padding:5px;
+  }
+  tbody tr td.title{
+    width:72%;
+  }
+}
+table.tabular_data.align_top td{
+  vertical-align:top;
+}
+
+table.form_table td {
+  padding: 5px;
+}
+table.form_table td label {
+  display: block;
+}
+table.form_table td select {
+  width: 223px;
+}
+
+table td.email span{
+  display: block;
+  width: 180px;
+  word-wrap: break-word;
+}
+
+table tr.grand_total {
+  background: #DFDFFF;
+}
+.icon_calendar {
+  display: block;
+  float: left;
+  height: 25px;
+  padding-left: 30px;
+  background-image: url(/assets/icon_calendar.png);
+  background-repeat: no-repeat;
+  line-height: 25px;
+}
+
+/* challenge tooltips */
+.challenge_type span {
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 23px;
+  margin: 0 auto;
+  text-indent: -32767px;
+  width: 23px;
+}
+.challenge_type span:hover {
+  background-position: 0 -23px;
+}
+.challenge_type span.mok {
+  background-image: url('/assets/icon_challenge/icon-mok.png');
+}
+.challenge_type span.pm {
+  background-image: url('/assets/icon_challenge/icon-pm.png');
+}
+.challenge_type span.ctc {
+  background-image: url('/assets/icon_challenge/icon-ctc.png');
+}
+.challenge_type span.cs {
+  background-image: url('/assets/icon_challenge/icon-cs.png');
+}
+.challenge_type span.psi {
+  background-image: url('/assets/icon_challenge/icon-psi.png');
+}
+p.tip-title{
+  color:#000;
+  font-weight:bold;
+  padding-left:60px;
+}
+p.tip-text{
+  font-size:11px;
+  padding-left:60px;
+}
+img.tip-img{
+  position:absolute;
+  top:5px;
+  left:5px;
+}
+.tooltip_challenge{
+  position:relative;
+  display:none;
+}
+/* end challenge tooltips*/
+
+table.separated {
+  thead tr td {
+    border-style: none !important;
+  }
+
+  tbody tr {
+    border: none;
+    border-bottom: 1px dotted #ccc;
+  }
+
+  tbody tr:first-child {
+    border-top: 1px solid #ccc;
+  }
+
+}

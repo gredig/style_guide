@@ -1,0 +1,207 @@
+@mixin action-link {
+  display: inline-block;
+  border: 1px solid #bbb;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  padding: 4px 6px;
+  font-size: 12px;
+  text-decoration: none;
+  color: $tci-purple;
+  background-color: #eee;
+  border-top-color:#ddd;
+  border-left-color:#ddd;
+  white-space:nowrap;
+  line-height:1em;
+  &:hover {
+    color: #eee;
+    background: $link-purple;
+  }
+  &.pressed {
+    /*@include purpleGr($darkPurple, $lightPurple);*/
+    /*color: #fff;*/
+  }
+}
+
+/* Standard Colors */
+
+$purple: #583597;
+$lightPurple: #C1B6D0;
+$darkPurple: #33135B;
+
+///* !-- Typography -- */
+
+$txtInsetShadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+$txtInsetHilight: 0 1px 0 rgba(255, 255, 255, 0.5);
+$txtOutsetHilight: 0 -1px 0 rgba(255, 255, 255, 0.5);
+$txtOutsetShadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+
+@mixin uiText($color: #fff, $txtShadow: $txtInsetShadow) {
+	color: $color;
+	font-weight: bold;
+	text-shadow: $txtShadow;
+	text-transform: capitalize;
+	/*uiText*/
+}
+
+///* !Gradients */
+// please note we use the old webkit syntax. we will eventually add in the new syntax once it's more universal. see: http://blogs.sitepoint.com/2011/01/18/webkit-updates-css3-gradient-support-matches-mozilla-syntax/
+// in the future, all gradients should have matching borders in the case they're used as header blocks. not all of them are complete in this sense.
+
+///* !-- Dull Gradients -- */
+
+@mixin grayLightGr($border: 0, $color1: #e8e8e8, $color2: #a3a3a3) {
+	background-color: #d2d2d2;
+	background-image: -moz-linear-gradient(top, $color1, $color2);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($color1), to($color2));
+	border: $border;
+	/* grayLightGr */
+}
+
+@mixin purpleGr($color1: $lightPurple, $color2: $darkPurple) {
+	background-color: #d2d2d2;
+	background-image: -moz-linear-gradient(top, $color1, $color2);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($color1), to($color2));
+	/* grayLightGr */
+}
+
+@mixin grayLightGrR ($color1: #e8e8e8, $color2: #a3a3a3) {
+	background-color: #d2d2d2;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($color2), to($color1));
+	background-image: -moz-linear-gradient(top, $color2, $color1);
+
+	/* grayLightGrR */
+}
+
+///* !-- Buttons -- */
+
+@mixin button($rad, $shadow, $width: 100%) {
+	@include borderRads($rad);
+	@include uiText($shadow);
+	border: 0;
+	display: block;
+	padding: 10px 0;
+	width: $width;
+	text-align: center;
+	/*button*/
+}
+
+@mixin buttonIn($rad, $shadow, $boxShadow) {
+	@include borderRads($rad);
+	@include uiText($shadow);
+	//@include boxShadow($boxShadow);
+	border: 0;
+	display: inline-block;
+	padding: 8px 10px;
+	/*buttonIn*/
+}
+
+///* !-- Text Inputs -- */
+
+@mixin formInput($rad: 5px, $bgColor: #fff, $bgImage: 'icons_search.png', $shadow: inset $shadow) {
+	@include borderRads($rad);
+	@include boxShadow($shadow);
+	background: $bgColor url($bgImage) 95% 50% no-repeat;
+	display: inline-block;
+	margin: 5px auto;
+	padding: 7px 0;
+	/*formInput*/
+}
+
+
+///* !-- Shiny Gradients -- */
+
+@mixin redGrSh($border: 0) {
+	background-color: #e02f26;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%,
+		from(#e02f26),
+		color-stop(0.5, #c02923),
+		color-stop(0.5, #b22722),
+		to(#aa2621));
+	background-image: -moz-linear-gradient(top, #e02f26, #c02923 50%, #b22722 50%, #aa2621);
+	border-top: $border solid #a1a1a1;
+	border-bottom: $border solid #5a5a5a;
+	/* redGrSh */
+}
+
+
+@mixin grayGrSh($border: 0) {
+	background-color: #d2d2d2;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%,
+		from(#d2d2d2),
+		color-stop(0.5, #979797),
+		color-stop(0.5, #6b6b6b),
+		to(#6b6b6b));
+	background-image: -moz-linear-gradient(top, #d2d2d2, #979797 50%, #6b6b6b 50%, #6b6b6b);
+	border: $border;
+	/* grayGrSh */
+}
+
+@mixin grayLightGrSh($border: 0) {
+	background-color: #949494;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%,
+		from(#e8e8e8),
+		color-stop(0.5, #cfcfcf),
+		color-stop(0.5, #c3c3c3),
+		to(#a3a3a3));
+	background-image: -moz-linear-gradient(top, #e8e8e8, #cfcfcf 50%, #c3c3c3 50%, #a3a3a3);
+	border-top: $border solid #a1a1a1;
+	border-bottom: $border solid #888;
+	/* grayLightGrSh */
+}
+
+@mixin grayDarkGrSh($border: 0) {
+	background-color: #949494;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%,
+		from(#949494),
+		color-stop(0.5, #686868),
+		color-stop(0.5, #555),
+		to(#4c4c4c));
+	background-image: -moz-linear-gradient(top, #949494, #686868 50%, #555 50%, #4c4c4c);
+	border-top: $border solid #a1a1a1;
+	border-bottom: $border solid #5a5a5a;
+	/* grayDarkGrSh */
+}
+
+///* !-- Transparent Gradients -- */
+
+@mixin transGr($color: #fff) {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($gradientColor), to(rgba(255,255,255,0)));
+	/*MVwhiteTransGr*/
+}
+
+///* !CSS3 FX */
+
+/* !-- Box Effects -- */
+
+$rad: 5px !default;
+$shadow: 0 0 3px rgba(0, 0, 0, 0.5) !default;
+$boxShadow: 0 0 3px rgba(0, 0, 0, 0.5) !default;
+
+@mixin boxShadow($shadow){
+	box-shadow: $shadow;
+	-moz-box-shadow: $shadow;
+	-webkit-box-shadow: $shadow;
+	/*boxShadow*/
+}
+
+@mixin borderRads($rad) {
+	border-radius: $rad;
+	-webkit-border-radius: $rad;
+	-moz-border-radius: $rad;
+	/*borderRads*/
+}
+
+@mixin borderRadsSpecify($topLeft, $topRight, $bottomRight, $bottomLeft) {
+	-webkit-border-top-left-radius: $topLeft;
+	-webkit-border-top-right-radius: $topRight;
+	-webkit-border-bottom-right-radius: $bottomRight;
+	-webkit-border-bottom-left-radius: $bottomLeft;
+	-moz-border-radius-topleft: $topLeft;
+	-moz-border-radius-topright: $topRight;
+	-moz-border-radius-bottomright: $bottomRight;
+	-moz-border-radius-bottomleft: $bottomLeft;
+}
+
+@mixin boxReflect($offset: 0, $stop: 0.5, $opacity: 0.5) {
+	-webkit-box-reflect: below $offset -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop($stop, transparent), to(rgba(255, 255, 255, $opacity)));
+}

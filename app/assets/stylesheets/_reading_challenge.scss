@@ -1,0 +1,1037 @@
+@import "_mixins.scss";
+
+ul.dialog_answers {
+  padding-left: 10px;
+  padding-top: 10px;
+  width: 435px;
+}
+
+p.dialog_group {
+  color: #6c6c6c;
+  font-size: 16px;
+
+  span {
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
+
+.answer_notice {
+  margin: 20px 0;
+  padding: 10px;
+  &.notice {
+    background-color: #669900;
+    padding: 6px 14px 8px;
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
+.answer_alert {
+  margin: 20px 0;
+  padding: 10px;
+  &.notice {
+    background-color: red;
+    padding: 6px 14px 8px;
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
+.answer_try_again {
+  margin: 20px 0;
+  padding: 10px;
+  &.notice {
+    background-color: #FF9;
+    color: #000;
+    padding: 6px 14px 8px;
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
+.ipad_cursor {
+  cursor: pointer;
+}
+
+.historical_text {
+  float: left;
+  width: 410px;
+  padding: 10px 5px;
+  line-height: 22px;
+  border: 1px solid #938d92;
+}
+
+.challenge_question_box {
+  background: #2c4376 url(/assets/reading_challenge/cs_challenge_solarpanel_bg.jpg) 0 -184px repeat-x;
+  border-left: 6px solid #c9c9c9;
+  border-right: 6px solid #c9c9c9;
+  border-top: 6px solid #c9c9c9;
+  color: #fff;
+  text-align: center;
+  padding: 28px 0;
+  width: 150px;
+  &:first-child {
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  &:last-child {
+    border-bottom: 6px solid #c9c9c9;
+
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+}
+
+.disabled_answer_text {
+  opacity: .2;
+  filter: alpha(opacity=20);
+}
+
+.challenge_container {
+  background: #09111D url(/assets/reading_challenge/cs_challenge_bg.jpg) no-repeat;
+  height: 500px;
+  padding: 15px;
+  width: 930px;
+  position: relative;
+}
+
+.challenge_header {
+  background: url(/assets/reading_challenge/cs_challenge_headerbar.png) no-repeat;
+  width: 874px;
+  height: 117px;
+  margin: 0 0 -127px 70px;
+}
+
+.challenge_header_text {
+  float: right;
+  margin: 25px 25px 0 0;
+  width: 155px;
+  display: none;
+}
+
+.challenge_section_column {
+  background: url(/assets/reading_challenge/cs_challenge_strut.png) 15px 141px no-repeat;
+  width: 180px;
+  float: left;
+}
+
+.challenge_section_header {
+  background: url(/assets/reading_challenge/cs_challenge_screen.png) no-repeat 2px 0;
+  color: #fff;
+  height: 135px;
+  margin: 10px;
+  text-align: center;
+}
+
+.challenge_section_header_title {
+  text-align: center;
+  width: 120px;
+  margin: 0 auto 5px;
+  padding: 25px 0 0;
+
+  color: #9EA4D6;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.challenge_section_header_content {
+  text-align: center;
+  width: 120px;
+  margin: 0 auto;
+}
+
+.challenge_section_list {
+  margin: 29px 10px 10px;
+}
+
+.challenge_points_num {
+  font-size: 34px;
+  font-weight: bold;
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+.challenge_points_supertext {
+  vertical-align: top;
+  margin-left: 3px;
+}
+
+.challenge_answered {
+  background: #2C4376 url(/assets/reading_challenge/cs_challenge_solarpanel_bg.jpg) 0 -92px repeat-x;
+}
+
+.challenge_active {
+  background: #2C4376 url(/assets/reading_challenge/cs_challenge_solarpanel_bg.jpg) 0 -184px repeat-x;
+}
+
+.challenge_points {
+}
+
+.final_question_image {
+  float: left;
+  width: 590px;
+  height: 435px;
+  position: relative;
+  z-index: 1;
+  padding-top: 15px;
+  padding-left: 0;
+}
+
+/* Cosmic Squares */
+
+.cs_challenge_container {
+  background: url(/assets/reading_challenge/challenge_bg_cs.jpg) no-repeat;
+  padding: 12px;
+  width: 840px;
+  height: 653px;
+
+}
+
+.cs_challenge_header {
+  background: none;
+  height: 0;
+  margin: 0;
+}
+
+.cs_challenge_section_header_title {
+  width: 100px;
+}
+
+.cs_challenge_section_header {
+  background: none;
+}
+
+.cs_challenge_section_column {
+  background: none;
+  width: 150px;
+  margin-top: 77px;
+  margin-right: 42px;
+}
+
+.cs_challenge_section_list {
+  background: none;
+  margin: 0;
+}
+
+.cs_challenge_points_supertext {
+  margin-left: -5px;
+}
+
+.cs_challenge_question_box {
+  background: url(/assets/reading_challenge/cs_challenge_solarpanel_bg.jpg) repeat-x;
+  border: 3px #F7F6F3 solid;
+  border-bottom: 0;
+  color: #fff;
+  text-align: center;
+  height: 40px;
+  width: 150px;
+  &:first-child {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+  }
+  &:last-child {
+    border-bottom: 3px #F7F6F3 solid;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+  }
+}
+
+.cs_challenge_answered {
+  background: url(/assets/reading_challenge/cs_challenge_solarpanel_bg.jpg) repeat-x 0 -100px !important;
+  font-size: 18px;
+}
+
+.cs_challenge_container {
+  .answered {
+    background: url(/assets/reading_challenge/cs_challenge_solarpanel_bg.jpg) repeat-x 0 -100px !important;
+  }
+}
+
+.cs_challenge_active {
+  background: url(/assets/reading_challenge/cs_challenge_solarpanel_bg.jpg) repeat-x 0 -200px !important;
+  font-size: 20px;
+}
+
+.cs_challenge_score {
+  display: block;
+  color: #fff;
+  font-size: 24px;
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  text-align: center;
+  width: 120px;
+  position: absolute;
+  top: 648px;
+  left: 718px;
+}
+
+.cs_challenge_instructions {
+  position: absolute;
+  color: #fff;
+  height: 25px;
+  width: 153px;
+  top: 650px;
+  left: 9px;
+  span {
+    display: none;
+  }
+}
+
+.cs_lesson_title {
+  font-size: 14px;
+  left: 175px;
+  top: 27px;
+  position: absolute;
+  text-align: center;
+  width: 430px;
+  color: #464F81;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Impact", HelveticaNeue, sans-serif;
+}
+
+.cs_user_name {
+  color: #F0F0F0;
+/*     float: right; */
+  font-size: 14px;
+/*     left: -315px; */
+  position: relative;
+  top: 79px;
+  width: 600px;
+  height: 30px;
+}
+
+/* Matrix of Knowledge */
+
+.mok_challenge_container {
+  background: url(/assets/reading_challenge/challenge_bg_mok.jpg) no-repeat;
+  padding: 0 0 15px 0;
+  height: 640px;
+  width: 840px;
+  position: relative;
+}
+
+.mok_challenge_screen_container {
+  margin: 0 0 0 28px;
+  padding-top: 128px;
+}
+
+.mok_challenge_header {
+  background: none;
+}
+
+.mok_challenge_section_header {
+  background: none;
+  width: 137px;
+  height: 80px;
+  margin: 0;
+}
+
+.mok_challenge_section_header_title {
+  padding: 0;
+}
+
+.mok_challenge_section_column {
+  background: none;
+  width: 120px;
+}
+
+.mok_challenge_section_list {
+  background: none;
+  margin: 0 auto;
+  width: auto;
+  padding-top: 15px;
+}
+
+.mok_challenge_points_supertext {
+  margin-left: -5px;
+}
+
+.mok_challenge_question_box {
+  background: url(/assets/reading_challenge/mok_square.png) no-repeat;
+  border: 0;
+  color: #fff;
+  display: block;
+  text-align: center;
+  height: 60px;
+  width: 140px;
+  padding: 15px 0 0 0;
+  margin: 0;
+  &:first-child {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border: 0;
+  }
+  &:last-child {
+    border: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+  }
+  &.challenge_answered {
+  	span {
+  		position: relative;
+  		top: 12px;
+  	}
+  }
+  &.challenge_active {
+  	span {
+  		position: relative;
+  		top: 12px;
+  	}
+  }
+}
+
+.mok_challenge_answered {
+  background: url(/assets/reading_challenge/mok_square.png) no-repeat 0 -80px;
+  font-size: 16px;
+}
+
+.mok_challenge_container {
+  .answered {
+    background: none !important;
+  }
+}
+
+.mok_challenge_active {
+  background: url(/assets/reading_challenge/mok_square.png) no-repeat 0 -161px;
+  font-size: 18px;
+}
+
+.mok_challenge_score {
+  font-size: 14px;
+  color: #f0f0f0;
+  position: absolute;
+  top: 548px;
+  left: 533px;
+  text-transform: uppercase;
+}
+
+.mok_challenge_instructions {
+  color: #fff;
+  height: 28px;
+  width: 182px;
+  font-size: 14px;
+  position: absolute;
+  top: 587px;
+  left: 19px;
+  text-align: center;
+  line-height: 28px;
+}
+
+.mok_lesson_title {
+  color: #F0F0F0;
+  font-size: 14px;
+  left: 361px;
+  position: absolute;
+  text-align: center;
+  top: 40px;
+  width: 354px;
+  height: 28px;
+  max-height: 28px;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.mok_user_name {
+  color: #F0F0F0;
+  font-size: 14px;
+  left: 480px;
+  position: absolute;
+  text-align: center;
+  top: 579px;
+  width: 186px;
+  height: 54px;
+  overflow: hidden;
+  max-height: 54px;
+  line-height: 54px;
+}
+
+.mok_square_instruction {
+  color: #F0F0F0;
+  font-size: 14px;
+  left: 38px;
+  position: absolute;
+  top: 557px;
+  width: 356px;
+  height: 22px;
+}
+
+/* Crack the Code */
+
+.ctc_challenge_container {
+  background: url(/assets/reading_challenge/challenge_bg_ctc.jpg) no-repeat;
+  padding: 0 0 15px 0;
+  width: 850px;
+  height: 600px;
+}
+
+/*
+.ctc_challenge_grid {
+	background: url(/assets/reading_challenge/ctc_grid.png) no-repeat;
+	width: 610px;
+	height: 452px;
+	z-index: 2;
+	position: relative;
+}
+*/
+
+.ctc_challenge_screen_container {
+  position: relative;
+  top: 95px;
+  left: 5px;
+  width: 600px;
+}
+
+.ctc_challenge_instructions {
+  color: #fff;
+  width: 192px;
+  position: absolute;
+  text-align: center;
+  left: 632px;
+  top: 563px;
+}
+
+.ctc_challenge_score {
+  color: #0f0;
+  display: block;
+  height: 30px;
+  position: absolute;
+  left: 625px;
+  top: 507px;
+  font-size: 20px;
+  width: 210px;
+  text-align: center;
+}
+
+.ctc_grid {
+  position: relative;
+  z-index: 2;
+}
+
+.ctc_section_column, .pm_section_column {
+  float: left;
+}
+
+.ctc_challenge_section_header {
+  margin-top: -380px;
+  position: relative;
+  left: 30px;
+}
+
+.ctc_challenge_section_list {
+  width: 114px;
+  position: relative;
+  left: -10px;
+}
+
+.ctc_challenge_question_box, .ctc_incorrect_answered, .ctc_answered {
+  background: url(/assets/reading_challenge/ctc_door.jpg) no-repeat;
+  border: 0;
+  color: #fff;
+  text-align: center;
+  height: 98px;
+  width: 115px;
+  margin: 0;
+  padding: 0;
+}
+
+.ctc_answered {
+  background: none;
+}
+
+.ctc_challenge_active {
+  background: url(/assets/reading_challenge/ctc_door.jpg) no-repeat !important;
+  color: #412C82;
+  font-weight: bold;
+  span {
+    position: relative;
+    top: 17px;
+    text-transform: uppercase;
+  }
+}
+
+.ctc_final_question_image {
+  position: relative;
+  left: 33px;
+  top: 105px;
+  img {
+    max-height: 390px;
+    max-width: 550px;
+  }
+}
+
+.ctc_points_num {
+}
+
+.ctc_incorrect_answered {
+}
+
+.ctc_challenge_question {
+}
+
+.ctc_points_num {
+  font-weight: bold;
+  color: #000;
+  position: relative;
+  left: -35px;
+  top: 10px;
+}
+
+.ctc_incorrect_answered {
+  background: url(/assets/reading_challenge/ctc_door.jpg) no-repeat 0 -98px;
+}
+
+.ctc_challenge_bonus {
+  display: block;
+  padding: 0;
+  margin: 0;
+  .ctc_challenge_question {
+    background: #5f5f5f;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    display: block;
+    padding: 0;
+    width: 126px;
+    padding: 10px;
+    position: absolute;
+    top: 384px;
+    left: 660px;
+    text-align: center;
+  }
+  .ctc_challenge_active {
+    background: none !important;
+    span {
+      display: none !important;
+    }
+  }
+  .ctc_answered {
+    height: auto;
+  }
+}
+
+.ctc_bonus_text {
+  left: 657px;
+  position: absolute;
+  top: 285px;
+  width: 155px;
+}
+
+.ctc_square_instruction {
+  color: #F0F0F0;
+  font-size: 14px;
+  left: 25px;
+  position: absolute;
+  top: 562px;
+  width: 585px;
+}
+
+.pm_bonus_question_warning, .ctc_bonus_question_warning {
+  width: 150px;
+  z-index: 100;
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  padding: 15px;
+  padding: 15px;
+  color: #323232;
+  font-size: 12px;
+  background-color: #eee;
+  line-height: 18px;
+  border: 1px solid #fff;
+  box-shadow: 1px 1px 4px #999;
+  -moz-box-shadow: 1px 1px 4px #999;
+  -webkit-box-shadow: 1px 1px 4px #999;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.ctc_bonus_question_warning {
+  top: 320px;
+  right: 25px;
+}
+
+/* Picture Maker */
+
+.pm_challenge_question {
+  background: #2C4376 url(/assets/reading_challenge/pm_door.jpg) no-repeat;
+  color: #BF2800;
+  text-align: center;
+  height: 127px;
+  width: 123px;
+  margin: 0;
+  padding: 0;
+  border: 0 !important;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  &:last-child {
+    border: 0;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+  }
+  &:first-child {
+    border: 0;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+  }
+}
+
+.pm_section_column {
+  position: relative;
+  top: 33px;
+  left: 68px;
+}
+
+.pm_final_question_image {
+  position: absolute;
+  left: 73px;
+  top: 18px;
+  img {
+    max-height: 380px;
+    max-width: 480px;
+  }
+}
+
+.pm_answered {
+  background: none;
+  background-color: transparent;
+}
+
+.pm_incorrect_answered {
+  background: none;
+  background-color: #000;
+}
+
+.pm_points_num {
+  font-size: 23px;
+  font-weight: bold;
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+.pm_grid {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+}
+
+.pm_challenge_container {
+  background: url(/assets/reading_challenge/challenge_bg_pm.jpg) no-repeat !important;
+  padding: 0 0 15px 0;
+  width: 850px;
+  height: 511px;
+}
+
+.pm_challenge_instructions {
+  color: #D5B363;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+  width: 143px;
+  height: 28px;
+  line-height: 28px;
+  position: absolute;
+  top: 466px;
+  left: 660px;
+}
+
+.pm_challenge_score {
+  color: #5A211F;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  width: 113px;
+  position: absolute;
+  top: 133px;
+  left: 708px;
+}
+
+.pm_challenge_section_list {
+  li {
+    background: url(/assets/reading_challenge/pm_door.jpg) no-repeat;
+    .pm_points_num {
+      position: relative;
+      top: 54px;
+    }
+    .pm_active_txt {
+      position: relative;
+      top: 35px;
+    }
+    &.pm_challenge_active {
+      background: url(/assets/reading_challenge/pm_door.jpg) no-repeat;
+      color: #BF2800;
+      text-align: center;
+      height: 127px;
+      width: 123px;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      -moz-border-radius: 0;
+      -webkit-border-radius: 0;
+    }
+    &.pm_answered {
+      background: none;
+    }
+    &.pm_incorrect_answered {
+      background: url(/assets/reading_challenge/pm_door.jpg) no-repeat 0 -129px;
+    }
+  }
+}
+
+div.pm_challenge_question_bonus {
+  display: block;
+  font-weight: bold;
+  font-size: 1.2em;
+  float: right;
+  height: 305px;
+  width: 199px;
+  position: absolute;
+  top: 223px;
+  left: 629px;
+  .pm_challenge_question {
+    border: 0;
+    color: #5A211F;
+  }
+  p.pm_bonus_button {
+  	background: url(/assets/reading_challenge/pm_bonus_button.png) no-repeat 0 0;
+    background-size: 100% auto;
+  	width: 180px;
+  	height: 32px;
+  	margin: 10px auto 0;
+  	padding-top: 10px;
+  	text-align: center;
+    line-height: 22px;
+  }
+  p.pm_bonus_text {
+  	text-align: center;
+  	margin: 5px 10px;
+  	padding-top: 5px;
+  	font-weight: normal;
+  } 
+  p.clickable {
+    opacity: 1;
+  }
+}
+
+/* PSI */
+
+.psi_challenge_container {
+  background: url(/assets/reading_challenge/challenge_bg_psi.jpg) no-repeat !important;
+  padding: 0 0 15px 0;
+  width: 850px;
+  height: 508px;
+  position: relative;
+}
+
+.psi_challenge_question_box {
+  background: url(/assets/reading_challenge/psi_folder.png) no-repeat;
+  color: #000;
+  text-align: center;
+  height: 100px;
+  width: 125px;
+  margin: -25px 0 0 0;
+  padding: 0;
+  border: 0 !important;
+  .challenge_points_num {
+  	position: relative;
+  	top: 30px;
+  }
+  .challenge_points_supertext {
+  	position: relative;
+  	top: 40px;
+  }
+  &.challenge_active {
+  	color: red;
+  	span {
+  		position: relative;
+	  	top: 45px;
+  	}
+  }
+  &.challenge_answered {
+  	color: red;
+  	span {
+  		position: relative;
+	  	top: 45px;
+  	}
+  }
+}
+
+.psi_challenge_section_column {
+	background: none;
+	position: relative;
+	top: 135px;
+	left: 28px;
+	width: 125px;
+}
+
+.psi_challenge_section_column.first_column {
+    left: 23px;
+}
+
+.psi_challenge_section_list {
+	margin: 0;
+	width: 125px;
+}
+
+.psi_challenge_score {
+	position: absolute;
+	top: 400px;
+	left: 750px;
+	color: #000;
+	font-size: 18px;
+}
+
+.psi_instructions {
+  color: #fff;
+  font-size: 18px;
+  left: 687px;
+  position: absolute;
+  text-align: center;
+  line-height: 29px;
+  top: 471px;
+  width: 151px;
+}
+
+.psi_user_name {
+  color: #F0F0F0;
+  font-size: 14px;
+  height: 27px;
+  left: 20px;
+  position: absolute;
+  top: 481px;
+  width: 600px;
+}
+
+.psi_lesson_title {
+  left: 736px;
+  position: absolute;
+  top: 219px;
+  width: 112px;
+  font-size: 15px;
+}
+
+.psi_challenge_header {
+	background: none;
+	width: auto;
+	height: auto;
+	margin: 0;
+}
+
+.psi_challenge_section_header {
+	background: none;
+	height: auto;
+	margin: 0;
+	color: red;
+	
+	position: relative;
+	top: -80px;
+}
+
+/* ---- */
+
+ul.dialog_answers li input[type=radio] {
+  height: 20px;
+  width: 20px;
+  margin: -1px 3px 3px 13px;
+}
+
+
+.challenge_question_number {
+  height: 37px;
+  width: 37px;
+  display: inline-block;
+  background: url('icon_bubble_blank_white.png') no-repeat;
+  text-align: center;
+  line-height: 37px;
+  font-size: 18px;
+  float: left;
+  margin-right: 10px;
+  color: #666;
+}
+
+.challenge_submit_answer_button {
+  font-family: arial, helvetica, clean, sans-serif;
+  margin-top: 40px;
+  height: 34px;
+  width: 90px;
+  cursor: pointer;
+  display:block;
+  background: #F2F3F5 url('add_class_link_back.png') repeat-x bottom;
+  border: 1px solid;
+  border-color: #e4e4e4 #c1c1c1 #6e6e6e;
+  padding-left: 2px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  text-shadow: 0px 1px 1px #FFF;
+  font-size: 14px;
+  color: #6e4f95;
+  font-weight: bold;
+  text-shadow: 0px 1px 0px #fff;
+  -moz-text-shadow: 0px 1px 0px #fff;
+  -webkit-text-shadow: 0px 1px 0px #fff;
+  -moz-box-shadow: 0px 1px 1px 0px #ccc;
+  box-shadow: 0px 1px 1px 0px #ccc;
+  -webkit-box-shadow: 0px 1px 1px 0px #ccc;
+}
+
+span.challenge_question_text {
+  vertical-align: middle;
+  line-height: 18px;
+}
+
+.bonus_hide {
+  opacity: .5;
+}
+
+.dialog_question {
+  line-height: 32px;
+  font-size: 20px;
+  font-style: italic;
+  display: block;
+  padding-left: 20px;
+  padding-top: 4px;
+}
+
+.challenge_answers_label p {
+  margin-left: 58px;
+  margin-top: 6px;
+  text-indent: -18px;
+}
+
+.psi_challenge_answers_label {
+  width: 340px;
+
+  p {
+    margin-top: 6px;
+    margin-left: 58px;
+    text-indent: -18px;
+  }
+}
+

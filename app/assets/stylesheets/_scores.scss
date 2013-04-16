@@ -1,0 +1,287 @@
+a.small_link, a.small_link:visited {
+  font-size: .9em;
+  font-weight: bold;
+}
+
+.smaller_link {
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.change_class_wrapper {
+  text-align: left;
+  font-weight: bold;
+}
+
+#change_class, .dropdown {
+  background: #fff url('scores_dropdown_arrow.png') no-repeat right;
+  position: relative;
+  height: 31px;
+  width: 450px;
+  border: 1px solid #cacaca;
+  overflow: hidden;
+  line-height: 31px;
+  box-shadow: 2px 2px 3px #aaa;
+  -moz-box-shadow: 2px 2px 3px #aaa;
+  -webkit-box-shadow: 2px 2px 3px #aaa;
+
+  select {
+    background-color: transparent;
+    width: 480px;
+    border-style: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    height: 21px;
+    padding: 0 10px;
+    -webkit-appearance: none;
+
+    option {
+      line-height: 31px;
+    }
+  }
+}
+
+#change_class {
+  margin: 10px 0 0 10px;
+}
+
+#all_scores_head {
+  text-align: left;
+  margin-top: 30px;
+  height: 44px;
+  border-top: 1px solid #dbdbdb;
+  border-left: 1px solid #e2e2e2;
+  border-right: 1px solid #dfdfdf;
+  position: relative;
+  background: url('scoring_div_back.png');
+
+  div.score_key {
+    float: right;
+
+    div {
+      width: 130px;
+      float: right;
+      margin-right: 5px;
+      display: inline-block;
+      padding-left: 15px;
+      height: 44px;
+
+      img {
+        margin-right: 10px;
+        vertical-align: middle;
+      }
+
+      span {
+        font-weight: bold;
+        font-size: 11px;
+        line-height: 44px;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  div#drop_wrapper {
+    position: absolute;
+    left: 9px;
+    top: -21px;
+    width: 580px;
+
+    a {
+      font-variant: normal;
+    }
+
+    div#export_csv_message {
+      position: absolute;
+      left: 590px;
+      top: -10px;
+      width: 235px;
+      border: 1px solid #999;
+      background-color: #fff8cd;
+      padding: 8px;
+
+      span {
+        color: #333;
+      }
+    }
+  }
+
+}
+
+#all_scores {
+  text-align: center;
+  position: relative;
+
+  .align_right {
+    text-align: right;
+  }
+
+  a {
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 12px;
+    color: #6c4c9f;
+  }
+
+  table {
+    border-collapse: separate;
+  }
+  td {
+    border: 1px solid #ccc;
+
+    a.trends_link {
+      margin: 3px 15px auto 8px;
+      display: block;
+      background: #fff url('scoring_trends_button.png') repeat-x;
+      height: 27px;
+      line-height: 27px;
+      padding: 0 15px;
+      border-radius: 15px;
+      -moz-border-radius: 15px;
+      -webkit-border-radius: 15px;
+      border-top: 1px solid #e6e6e6;
+      border-bottom: 1px solid #8d8d8d;
+      font-size: 12px;
+      font-variant: small-caps;
+      float: right;
+    }
+
+    img {
+      vertical-align: middle;
+    }
+  }
+
+  td.no_border_top {
+    border-top: none;
+  }
+
+  td.w22 {
+    width: 22%;
+  }
+  td.w26 {
+    width: 26%;
+  }
+
+  td.head {
+    height: 46px;
+    line-height: 46px;
+    color: #333;
+    font-weight: bold;
+    font-size: 13px;
+    background: #dadada url('scoring_head_back.png') repeat-x top;
+  }
+
+  td.head:first-child {
+    text-align: left;
+    padding-left: 11px;
+    border-top-style: none;
+    border-left: 1px solid #e2e2e2;
+    background: #fff url('scoring_grading_tips_cell.png') repeat-y left;
+  }
+
+  tr.info_rows td {
+    height: 34px;
+    background: #e5e5e5 url('scoring_info_rows.png') repeat-x;
+    line-height: 34px;
+    color: #333;
+    font-weight: bold;
+    font-size: 13px;
+  }
+
+  tr.info_rows td:first-child {
+    font-size: 11px;
+    text-align: left;
+    padding-left: 11px;
+    font-weight: normal;
+  }
+
+  tr.student_rows td {
+    height: 47px;
+    line-height: 47px;
+    border-top: 1px solid #999;
+  }
+
+  tr.student_rows td:first-child {
+    background-color: #f6f6f6;
+    border-left-width: 2px;
+    text-align: left;
+    padding-left: 11px;
+    color: #333;
+    font-weight: bold;
+    font-size: 13px;
+  }
+
+  tr.student_rows:last-child td {
+    border-bottom: 2px solid #ccc;
+  }
+}
+
+.grading_tips {
+  position: absolute;
+  width: 250px;
+  top: 50px;
+  color: #666;
+  font-size: 13px;
+  left: 140px;
+  border: 1px solid #999;
+  background-color: #fff8cd;
+  padding: 10px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  box-shadow: 2px 2px 3px #ccc;
+  -webkit-box-shadow: 2px 2px 3px #ccc;
+  -moz-box-shadow: 2px 2px 3px #ccc;
+  z-index: 350;
+  line-height: 14px;
+
+  em {
+    font-weight: bold;
+  }
+}
+
+.help_icon_score {
+  cursor: pointer;
+}
+
+.trials_popup {
+  position: absolute;
+  top: 50px;
+  left: 595px;
+  width: 200px;
+  height: 70px;
+  color: #666;
+  font-size: 13px;
+  border: 1px solid #999;
+  background-color: #fff8cd;
+  padding: 10px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  box-shadow: 2px 2px 3px #ccc;
+  -webkit-box-shadow: 2px 2px 3px #ccc;
+  -moz-box-shadow: 2px 2px 3px #ccc;
+  z-index: 350;
+  line-height: 14px;
+
+}
+
+.low_challenge_score, .low_assessment_score {
+  background-color: #f15549;
+  margin: 0 auto;
+  display: inline-block;
+  line-height: 31px;
+  color: #FFF !important;
+  width: 50px;
+  height: 31px;
+}
+
+.challenge_in_progress, .assessment_in_progress {
+  background-color: #c3dee1;
+  margin: 0 auto;
+  display: inline-block;
+  line-height: 31px;
+  width: 50px;
+  height: 31px;
+}
