@@ -4,7 +4,6 @@
 
 .sg_wrapper {
   background-color: #eeeeee;
-  height: 100%;
 }
 
 .sg_sections_wrapper {
@@ -38,4 +37,27 @@
   margin-top: 35px;
   font-variant: small-caps;
   font-size: 4em;
+}
+
+.sg_style_comments {
+  padding: 30px 50px;
+  margin-top: 15px;
+  float: left;
+  background-color: #999999;
+  width: 200px;
+  min-height: 10px;
+  line-height: 18px;
+}
+
+.sg_style_show {
+  margin-top: 15px;
+  margin-left: 25px;
+  float: left;
+  width: 990px;
+  background-color: #fafafa;
+  min-height: 100px;
+}
+
+.clear {
+  clear: both;
 }
