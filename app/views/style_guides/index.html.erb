@@ -1,4 +1,4 @@
-<div class="sg_sections_wrapper">
+<div class="sg_sections_wrapper" xmlns="http://www.w3.org/1999/html">
   <section id="layout_style">
     <h2 class="sg_h2">layout</h2>
     <div class="sg_style_comments">
@@ -6,25 +6,122 @@
       <p class="decision_point">Do we have any need for responsive design? What would be different between our current
       layout, and one that was 'built' for mobile browsing?</p>
     </div>
-    <div class="sg_style_show">
+    <div class="sg_style_show sg_fill_area">
       <%= image_tag "sg/sg_program_banner.png" %>
-      <%= image_tag "sg/sg_left_nav.png" %>
+      <div class="pos_fr">
+        <%= image_tag "sg/sg_view_indicator.png" %>
+      </div>
+      <div class="pos_fl">
+        <%= image_tag "sg/sg_left_nav.png" %>
+      </div>
       <%= image_tag "sg/sg_footer.png" %>
+    </div>
+    <div class="clear"></div>
+  </section>
+
+  <section id="grid_style">
+    <h2 class="sg_h2">grid</h2>
+    <div class="sg_style_comments">
+      <p>This is my proposal for a grid system moving forward.</p>
+      <p>Note that the four-wide row is not aligned (due to our 990px width). Avoid using it.</p>
+    </div>
+    <div class="sg_style_show sg_fill_area">
+      <div class="sg_program_banner"></div>
+      <div class="pos_fl sg_left_nav"></div>
+      <div class="pos_fr">
+        <div class="pn_grid_row">
+          <div class="pn_grid_span pn_span_full sg_grid_color">
+            pn_span_full (855px)
+          </div>
+        </div>
+
+        <div class="pn_grid_row">
+          <div class="pn_grid_span pn_span_half sg_grid_color">
+            pn_span_half (420px)
+          </div>
+          <div class="pn_grid_span pn_span_half sg_grid_color">
+            pn_span_half (420px)
+          </div>
+        </div>
+
+        <div class="pn_grid_row">
+          <div class="pn_grid_span pn_span_third sg_grid_color">
+            pn_span_third (275px)
+          </div>
+          <div class="pn_grid_span pn_span_third sg_grid_color">
+            pn_span_third (275px)
+          </div>
+          <div class="pn_grid_span pn_span_third sg_grid_color">
+            pn_span_third (275px)
+          </div>
+        </div>
+
+        <div class="pn_grid_row">
+          <div class="pn_grid_span pn_span_fourth sg_grid_color">
+            pn_span_fourth (202px)
+          </div>
+          <div class="pn_grid_span pn_span_fourth sg_grid_color">
+            pn_span_fourth (202px)
+          </div>
+          <div class="pn_grid_span pn_span_fourth sg_grid_color">
+            pn_span_fourth (202px)
+          </div>
+          <div class="pn_grid_span pn_span_fourth sg_grid_color">
+            pn_span_fourth (202px)
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+
+      <div class="sg_code">
+        &lt;div class="pn_grid_row"&gt;<br>
+        &nbsp;&nbsp;&lt;div class="pn_grid_span pn_span_full"&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;pn_span_full (855px)<br>
+        &nbsp;&nbsp;&lt;/div&gt;<br>
+        &lt;/div&gt;<br><br>
+
+        &lt;div class="pn_grid_row"&gt;<br>
+        &nbsp;&nbsp;&lt;div class="pn_grid_span pn_span_half"&gt; <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;pn_span_half (420px)<br>
+        &nbsp;&nbsp;&lt;/div&gt;<br>
+        &nbsp;&nbsp;&lt;div class="pn_grid_span pn_span_half"&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;pn_span_half (420px)<br>
+        &nbsp;&nbsp;&lt;/div&gt;<br>
+        &lt;/div&gt;<br><br>
+
+        &lt;div class="pn_grid_row"&gt;<br>
+        &nbsp;&nbsp;&lt;div class="pn_grid_span pn_span_third"&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;pn_span_third (275px)<br>
+        &nbsp;&nbsp;&lt;/div&gt;<br>
+        &nbsp;&nbsp;&lt;div class="pn_grid_span pn_span_third"&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;pn_span_third (275px)<br>
+        &nbsp;&nbsp;&lt;/div&gt;<br>
+        &nbsp;&nbsp;&lt;div class="pn_grid_span pn_span_third"&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;pn_span_third (275px)<br>
+        &nbsp;&nbsp;&lt;/div&gt;<br>
+        &lt;/div&gt;<br><br>
+
+        &lt;div class="pn_grid_row"&gt;<br>
+        &nbsp;&nbsp;&lt;div class="pn_grid_span pn_span_fourth"&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;pn_span_fourth (202px)<br>
+        &nbsp;&nbsp;&lt;/div&gt;<br>
+        &nbsp;&nbsp;&lt;div class="pn_grid_span pn_span_fourth"&gt; <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;pn_span_fourth (202px)<br>
+        &nbsp;&nbsp;&lt;/div&gt;<br>
+        &nbsp;&nbsp;&lt;div class="pn_grid_span pn_span_fourth"&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;pn_span_fourth (202px)<br>
+        &nbsp;&nbsp;&lt;/div&gt;<br>
+        &nbsp;&nbsp;&lt;div class="pn_grid_span pn_span_fourth"&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;pn_span_fourth (202px)<br>
+        &nbsp;&nbsp;&lt;/div&gt;<br>
+        &lt;/div&gt;<br>
+      </div>
     </div>
     <div class="clear"></div>
   </section>
 
   <section id="typography_style">
     <h2 class="sg_h2">typography</h2>
-    <div class="sg_style_comments">
-
-    </div>
-    <div class="sg_style_show"></div>
-    <div class="clear"></div>
-  </section>
-
-  <section id="code_style">
-    <h2 class="sg_h2">code</h2>
     <div class="sg_style_comments">
 
     </div>
@@ -65,6 +162,62 @@
 
     </div>
     <div class="sg_style_show"></div>
+    <div class="clear"></div>
+  </section>
+
+  <section id="code_style">
+    <h2 class="sg_h2">code</h2>
+    <div class="sg_style_comments">
+
+    </div>
+    <div class="sg_style_show">
+      <h3 class="sg_h3">Ruby & JavaScript</h3>
+      <ul>
+        <li>Indentations of 2 spaces<br>
+          <div class="sg_code">
+            class StyleGuidesController < ApplicationController<br>
+            &nbsp;&nbsp;def indentation<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;@indentations = Space.where(amount: 2)<br>
+            &nbsp;&nbsp;end<br>
+            end
+          </div>
+          <div class="sg_code">
+            var spacing = function(type) {<br>
+            &nbsp;&nbsp;if (type === "indentation") {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;return 2;<br>
+            &nbsp;&nbsp;}<br>
+            }
+          </div>
+        </li>
+      </ul>
+      <h3 class="sg_h3">JavaScript</h3>
+      <ul>
+        <li>
+          Functions / Methods<br>
+          <div class="sg_code">
+            function thisIsAFunction() { return true; }
+          </div>
+        </li>
+        <li>
+          Constructors<br>
+          <div class="sg_code">
+            function Magnifier() { return true; }
+          </div>
+        </li>
+        <li>
+          Variables<br>
+          <div class="sg_code">
+            var this_is_a_variable_name;
+          </div>
+        </li>
+        <li>
+          Constants<br>
+          <div class="sg_code">
+            FORCE_OF_GRAVITY
+          </div>
+        </li>
+      </ul>
+    </div>
     <div class="clear"></div>
   </section>
 </div>
