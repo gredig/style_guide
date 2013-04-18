@@ -1,4 +1,5 @@
 <div class="sg_sections_wrapper" xmlns="http://www.w3.org/1999/html">
+
   <section id="layout_style">
     <h2 class="sg_h2">layout</h2>
     <div class="sg_style_comments">
@@ -8,12 +9,21 @@
     </div>
     <div class="sg_style_show sg_fill_area">
       <%= image_tag "sg/sg_program_banner.png" %>
-      <div class="pos_fr">
-        <%= image_tag "sg/sg_view_indicator.png" %>
-      </div>
       <div class="pos_fl">
         <%= image_tag "sg/sg_left_nav.png" %>
       </div>
+      <div class="pos_fl">
+        <div class="sg_layout_breadcrumbs">
+          <span>Home </span>&raquo; <span>Page </span>&raquo; <span>Sub-page </span>&raquo; Current Page
+        </div>
+        <div class="sg_layout_h1">
+          <h1>Lesson / Resource Name</h1>
+        </div>
+      </div>
+      <div class="pos_fr">
+        <%= image_tag "sg/sg_view_indicator.png" %>
+      </div>
+      <div class="sg_layout_grid"></div>
       <%= image_tag "sg/sg_footer.png" %>
     </div>
     <div class="clear"></div>

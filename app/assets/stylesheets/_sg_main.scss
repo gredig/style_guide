@@ -99,6 +99,39 @@
   height: 45px;
 }
 
+.sg_layout_breadcrumbs {
+  margin-left: 15px;
+  font-size: 13px;
+  line-height: 40px;
+  color: #999999;
+
+  span {
+    color: #583597;
+    cursor: pointer;
+  }
+}
+
+.sg_layout_h1 {
+  margin-left: 15px;
+  color: #555555;
+  font-weight: bold;
+
+  h1 {
+    font-size: 20px !important;
+    line-height: 20px;
+    padding-bottom: 0;
+  }
+}
+
+.sg_layout_grid {
+  float: left;
+  width: 855px;
+  margin-top: 15px;
+  margin-left: 15px;
+  background-color: #cccccc;
+  height: 400px;
+}
+
 /**** Current Plato Globals (Dups) ****/
 .clear {
   clear: both;
@@ -110,6 +143,10 @@
 
 .pos_fr {
   float: right;
+}
+
+.ml15 {
+  margin-left: 15px;
 }
 
 /*********************/
