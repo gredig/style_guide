@@ -132,6 +132,121 @@
   height: 400px;
 }
 
+.sg_color_swatch {
+  width: 130px;
+  height: 130px;
+  padding: 15px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 12px;
+  float: left;
+  margin-right: 20px;
+
+  span {
+    font-weight: bold;
+  }
+
+  &.tci_purple {
+    background-color: #522e91;
+  }
+
+  &.tci_lt_blue {
+    background-color: #00a4e3;
+  }
+
+  &.tci_orange {
+    background-color: #f38f1d;
+  }
+
+  &.tci_eggplant {
+    background-color: #5261ac;
+  }
+
+  &.tci_yellow {
+    background-color: #ffc50c;
+  }
+
+  &.tci_avocado {
+    background-color: #b2cc1e;
+  }
+
+  &.tci_red {
+    background-color: #ee3224;
+  }
+
+  &.tci_green {
+    background-color: #49a942;
+  }
+
+  &.tci_dk_blue {
+    background-color: #2376bc;
+  }
+
+  &.tci_teal {
+    background-color: #00af9d;
+  }
+
+  &.tci_rust {
+    background-color: #b44539;
+  }
+
+  &.tci_dk_avocado {
+    background-color: #78a22f;
+  }
+
+  &.tci_orange_2 {
+    background-color: #d6741a;
+  }
+
+  &.tci_dk_teal {
+    background-color: #008576;
+  }
+
+  &.tci_forest_green {
+    background-color: #005c42;
+  }
+
+  &.tci_orange_3 {
+    background-color: #f57421;
+  }
+
+  &.tci_sage {
+    background-color: #205352;
+  }
+
+  &.tci_orange_4 {
+    background-color: #e58e1a;
+  }
+
+  &.tci_teal_3 {
+    background-color: #38939B;
+  }
+
+  &.tci_navy_blue {
+    background-color: #005595;
+  }
+
+  &.tci_teal_4 {
+    background-color: #008ca8;
+  }
+
+  &.tci_lt_grey {
+    background-color: #b0b1b3;
+  }
+
+  &.tci_dk_grey {
+    background-color: #868f98;
+  }
+
+  &.tci_red_grey {
+    background-color: #978f86;
+  }
+
+  &.tci_cranberry {
+    background-color: #800000;
+  }
+}
+
 /**** Current Plato Globals (Dups) ****/
 .clear {
   clear: both;
