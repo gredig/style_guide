@@ -10,7 +10,7 @@
 #sg_interaction_question_nav {
   position: absolute;
   width: 930px;
-  height: 50px;
+  height: 75px;
   top: 0;
   left: 0;
   background-color: #522e91;
@@ -18,26 +18,68 @@
   color: white;
 }
 
+#sg_interaction_position {
+  display: block;
+  float: left;
+  height: 75px;
+  width: 60px;
+  text-align: center;
+  line-height: 75px;
+  font-style: italic;
+}
+
 .sg_interaction_arrow {
   display: block;
   float: left;
   font-size: 48px;
-  height: 50px;
+  height: 75px;
   width: 25px;
   text-align: center;
-  line-height: 50px;
-}
-
-#sg_interaction_left_arrow {
-  margin-left: 10px;
+  line-height: 75px;
 }
 
 #sg_interaction_question {
   display: block;
-  float:left;
+  float: left;
   font-size: 20px;
-  width: 845px;
+  width: 795px;
   height: 100%;
-  line-height: 50px;
   margin-left: 15px;
+  margin-top: 5px;
+}
+
+/* MC */
+.sg_mc_image {
+  background-color: #cccccc;
+  width: 435px;
+  height: 550px;
+  padding: 0 100px;
+  top: 75px;
+  right: 5px;
+  position: absolute;
+  text-align: center;
+  font-size: 14px;
+
+  span {
+    display: block;
+    margin-top: 220px;
+    font-size: 30px;
+  }
+}
+
+.sg_mc_answer_box {
+  background-color: #dddddd;
+  position: absolute;
+  width: 186px;
+  height: 550px;
+  top: 75px;
+  left: 4px;
+  padding: 0 50px;
+  text-align: center;
+
+  span {
+    display: block;
+    margin-top: 220px;
+    font-size: 30px;
+  }
 }

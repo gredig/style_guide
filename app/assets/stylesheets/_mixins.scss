@@ -205,3 +205,12 @@ $boxShadow: 0 0 3px rgba(0, 0, 0, 0.5) !default;
 @mixin boxReflect($offset: 0, $stop: 0.5, $opacity: 0.5) {
 	-webkit-box-reflect: below $offset -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop($stop, transparent), to(rgba(255, 255, 255, $opacity)));
 }
+
+
+/* Interactions */
+$interaction_height: 700px;
+$interaction_width: 860px;
+$question_height: 30px;
+$left_side_width: 220px;
+$right_side_width: $interaction_width - $left_side_width;
+$effective_height: $interaction_height - $question_height - 16

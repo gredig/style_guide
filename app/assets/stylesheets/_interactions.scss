@@ -1,0 +1,69 @@
+/* Multiple Choice */
+.mc_answers_container {
+  float: left;
+  width: $left_side_width;
+  height: 454px;
+  background-color: #eeeeee;
+
+  .mc_answer {
+    margin: 10px;
+    font-size: 16px;
+    line-height: 16px;
+    cursor: pointer;
+    padding: 8px;
+
+    &:hover, &.mc_selected {
+      background-color: #cccccc;
+    }
+
+    &.mc_selected {
+      font-weight: bold;
+      font-style: italic;
+    }
+  }
+
+  .mc_check_answer {
+    color: #f5f5f5;
+    background-color: #522E91;
+    border-radius: 5px;
+    line-height: 25px;
+    cursor: pointer;
+    width: 100px;
+    bottom: 20px;
+    text-align: center;
+    position: absolute;
+    left: 83px;
+  }
+}
+
+.mc_media {
+  float: right;
+  width: 585px;
+
+  img {
+    margin: 0 auto;
+  }
+}
+
+.mc_question {
+  background-color: #555555;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 8px 15px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.mc_response {
+  display: none;
+  width: 555px;
+  font-size: 16px;
+  border: #aaaaaa;
+  padding: 15px;
+  background: url('trans_black.png');
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #ffffff;
+  height: 50px;
+}
