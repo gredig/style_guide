@@ -42,11 +42,13 @@
 .sg_interaction_question {
   display: block;
   float: left;
-  font-size: 20px;
   width: 795px;
   height: 100%;
   margin-left: 15px;
   margin-top: 5px;
+
+  line-height: 22px;
+  font-size: 18px;
 }
 
 /* MC */
@@ -227,6 +229,44 @@
 
   background-color: #CCCCCC;
 
+  text-align: center;
+
+  span {
+    display: block;
+    margin-top: 220px;
+    font-size: 30px;
+  }
+}
+
+//DnD
+
+/* MC */
+.sg_dropzone {
+  background-color: #cccccc;
+  width: 435px;
+  height: 550px;
+  padding: 0 100px;
+  top: 75px;
+  right: 5px;
+  position: absolute;
+  text-align: center;
+  font-size: 14px;
+
+  span {
+    display: block;
+    margin-top: 220px;
+    font-size: 30px;
+  }
+}
+
+.sg_draggables {
+  background-color: #dddddd;
+  position: absolute;
+  width: 186px;
+  height: 550px;
+  top: 75px;
+  left: 4px;
+  padding: 0 50px;
   text-align: center;
 
   span {
