@@ -61,9 +61,12 @@ body {
 }
 
 .sg_h2 {
+  display: inline-block;
+  width: 400px;
   margin-top: 35px;
   font-variant: small-caps;
   font-size: 4em;
+  cursor: pointer;
 
   i {
     font-size: .7em;
@@ -77,6 +80,28 @@ body {
 
 .sg_h3 {
   font-size: 1.5em;
+}
+
+.sg_back_to_top {
+  display: block;
+  float: left;
+  color: #5e4d80;
+  text-shadow: 0 1px #2d1953;
+  position: fixed;
+  left: 30px;
+  top: 25px;
+  line-height: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+
+  i {
+    font-size: 40px;
+  }
+}
+
+.sg_container {
+  display: none;
 }
 
 .sg_style_comments {
