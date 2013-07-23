@@ -1,25 +1,28 @@
-<div class="sg_style_comments">
-  <p>Site width is set to a fixed 990px to accommodate tablets.</p>
+<div id="sg_layouts_container" class="sg_container">
 
-  <p class="decision_point">Do we have any need for responsive design? What would be different between our current
-    layout, and one that was 'built' for mobile browsing?</p>
-</div>
-<div class="sg_style_show sg_fill_area">
-  <%= image_tag "sg/sg_program_banner.png" %>
-  <div class="pos_fl">
-    <%= image_tag "sg/sg_left_nav.png" %>
+  <div class="sg_style_comments">
+    <p>Site width is set to a fixed 990px to accommodate tablets.</p>
+
+    <p class="decision_point">Do we have any need for responsive design? What would be different between our current
+      layout, and one that was 'built' for mobile browsing?</p>
   </div>
-  <div class="pos_fl">
-    <div class="sg_layout_breadcrumbs">
-      <span>Home </span>&raquo; <span>Page </span>&raquo; <span>Sub-page </span>&raquo; Current Page
+  <div class="sg_style_show sg_fill_area">
+    <%= image_tag "sg/sg_program_banner.png" %>
+    <div class="pos_fl">
+      <%= image_tag "sg/sg_left_nav.png" %>
     </div>
-    <div class="sg_layout_h1">
-      <h1>Lesson / Resource Name</h1>
+    <div class="pos_fl">
+      <div class="sg_layout_breadcrumbs">
+        <span>Home </span>&raquo; <span>Page </span>&raquo; <span>Sub-page </span>&raquo; Current Page
+      </div>
+      <div class="sg_layout_h1">
+        <h1>Lesson / Resource Name</h1>
+      </div>
     </div>
+    <div class="pos_fr">
+      <%= image_tag "sg/sg_view_indicator.png" %>
+    </div>
+    <div class="sg_layout_grid"></div>
+    <%= image_tag "sg/sg_footer.png" %>
   </div>
-  <div class="pos_fr">
-    <%= image_tag "sg/sg_view_indicator.png" %>
-  </div>
-  <div class="sg_layout_grid"></div>
-  <%= image_tag "sg/sg_footer.png" %>
 </div>
