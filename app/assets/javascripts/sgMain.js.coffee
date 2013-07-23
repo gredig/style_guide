@@ -33,8 +33,6 @@ expand_section = (section) ->
 
   $(i).toggleClass('icon-rotate-180')
 
-  if $('#sg_' + section + "_container").length == 0
-    console.log(section)
 
 jQuery ->
   back_to_top()

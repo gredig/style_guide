@@ -1,0 +1,14 @@
+.email_button {
+  padding: 5px 10px;
+  cursor: pointer;
+  display: inline-block;
+
+  &:hover, &.email_selected {
+    background-color: #cccccc;
+  }
+
+  &.email_selected {
+    font-weight: bold;
+    font-style: italic;
+  }
+}
