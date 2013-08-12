@@ -1,0 +1,46 @@
+button, .pn_submit_button {
+  background-color: #522e91;
+
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+
+  box-shadow: 1px 1px 5px #999999;
+  -moz-box-shadow: 1px 1px 5px #999999;
+  -webkit-box-shadow: 1px 1px 5px #999999;
+
+  border: 1px solid #522e91;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 100%;
+  margin-top: 10px;
+  padding: 6px 10px 4px;
+  position: relative;
+  vertical-align: middle;
+  text-decoration: none;
+  text-shadow: 0 1px 3px #000000;
+  font-size: 100%;
+  font-size: 15px;
+
+  &:hover {
+    background-color: #673bb5;
+  }
+
+  &.admin {
+    border: 1px solid #bbbbbb;
+    background-color: #eeeeee;
+    border-top-color: #dddddd;
+    border-left-color: #dddddd;
+    color: #522e91;
+    text-shadow: none;
+    font-weight: normal;
+    box-shadow: none;
+    font-size: 12px;
+
+    &:hover {
+      background-color: #522e91;
+      color: #ffffff;
+    }
+  }
+}
