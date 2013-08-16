@@ -169,6 +169,7 @@ body {
     color: #999999;
     font-size: 12px;
     font-weight: normal;
+    margin-bottom: 25px;
   }
 }
 
@@ -362,6 +363,28 @@ body {
 
 .ml15 {
   margin-left: 15px;
+}
+
+.pold_default_link {
+  color: #522E91;
+  font-size: 14px;
+  font-weight: bold;
+
+  &.pold_toc_link {
+    &:hover {
+      color: #875dbd;
+    }
+  }
+}
+
+.pold_breadcrumbs_link {
+  font-variant: normal !important;
+  font-weight: normal !important;
+  font-size: 13px !important;
+}
+
+.pold_footer_link {
+  font-size: 12px;
 }
 
 /*********************/
