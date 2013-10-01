@@ -1,0 +1,167 @@
+/************************
+
+  right of trigger by default
+  required js classes: js_popup_wrapper, js_popup_close, js_popup_trigger, js_popup
+
+*************************/
+
+.tooltip_wrapper {
+  display: inline-block;
+  position: relative;
+
+  i {
+    font-size: 18px;
+  }
+
+  .tooltip_header {
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ebebeb;
+    background-color: #f7f7f7;
+    height: 40px;
+    left: 0;
+  }
+
+  .tooltip_popup {
+    z-index: 1000;
+    display: none;
+    width: 370px;
+    padding: 10px 20px 25px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid #aaaaaa;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 40px;
+    top: -20px;
+    color: #333333;
+    text-align: left;
+    font-weight: normal;
+    line-height: 20px;
+
+    span:not(.small_text) {
+      font-weight: bold;
+    }
+    span.small_text {
+      font-size: 11px;
+      font-style: italic;
+      color: #555555;
+    }
+
+    &:before {
+      height: 1px;
+      position: absolute;
+      content: "";
+      border: 12px solid transparent;
+      border-right: 11px solid #aaaaaa;
+      left: -23px;
+      top: 15px;
+    }
+    &:after {
+      height: 1px;
+      width: 1px;
+      position: absolute;
+      content: "";
+      border: 10px solid transparent;
+      border-right: 10px solid #f7f7f7;
+      left: -21px;
+      top: 17px;
+    }
+
+    .close_tooltip_popup {
+      background: url('close.png') center no-repeat;
+      background-size: 100% 100%;
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      cursor: pointer;
+      width: 23px;
+      height: 23px;
+      text-align: center;
+      line-height: 18px;
+      border-radius: 100%;
+
+      &:hover {
+        background-color: #eeeeee;
+      }
+    }
+  }
+
+  &.left_of_trigger {
+    .tooltip_popup {
+      right: 40px;
+      left: auto;
+
+      &:before {
+        border-right: 12px solid transparent;
+        border-left: 11px solid #aaaaaa;
+        left: auto;
+        right: -23px;
+      }
+
+      &:after {
+        border-right: 10px solid transparent;
+        border-left: 10px solid #f7f7f7;
+        left: auto;
+        right: -21px;
+      }
+    }
+
+  }
+
+  &.above_trigger {
+    .tooltip_popup {
+      right: -180px;
+      left: auto;
+      bottom: 33px;
+      top: auto;
+
+      &:before {
+        border-right: 12px solid transparent;
+        border-top: 11px solid #aaaaaa;
+        right: 174px;
+        left: auto;
+        top: auto;
+        bottom: -24px;
+      }
+
+      &:after {
+        border-right: 10px solid transparent;
+        border-top: 10px solid #ffffff;
+        right: 176px;
+        left: auto;
+        top: auto;
+        bottom: -21px;
+      }
+    }
+  }
+
+  &.below_trigger {
+    .tooltip_popup {
+      right: -180px;
+      left: auto;
+      top: 33px;
+
+      &:before {
+        border-right: 12px solid transparent;
+        border-bottom: 11px solid #aaaaaa;
+        right: 174px;
+        top: -24px;
+        left: auto;
+      }
+
+      &:after {
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #f7f7f7;
+        right: 175px;
+        top: -20px;
+        left: auto;
+      }
+    }
+  }
+}
