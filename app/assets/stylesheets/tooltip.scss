@@ -37,7 +37,7 @@
     border: 1px solid #aaaaaa;
     box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
     position: absolute;
-    left: 40px;
+    right: 20px;
     top: -20px;
     color: #333333;
     text-align: left;
@@ -94,8 +94,7 @@
 
   &.left_of_trigger {
     .tooltip_popup {
-      right: 40px;
-      left: auto;
+      left: -430px;
 
       &:before {
         border-right: 12px solid transparent;
