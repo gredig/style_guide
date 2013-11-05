@@ -5,13 +5,13 @@
   padding: 5px 10px;
   cursor: pointer;
   display: inline-block;
+  font-size: 13px;
 
   &:hover, &.email_selected {
     background-color: #cccccc;
   }
 
   &.email_selected {
-    font-weight: bold;
-    font-style: italic;
+    //font-weight: bold;
   }
 }
