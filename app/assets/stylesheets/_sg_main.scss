@@ -584,6 +584,15 @@ body {
   padding: 10px 0;
   font-size: 18px;
   font-weight: bold;
-  background-color: #999999;
+  background-color: #dddddd;
   text-align: center;
+  cursor: pointer;
+
+  &.expanded {
+    background-color: #999999;
+  }
+}
+
+.sg_colors_wrapper {
+  display: none;
 }
