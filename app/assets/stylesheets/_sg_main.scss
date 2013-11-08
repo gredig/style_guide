@@ -20,6 +20,11 @@ body {
   padding: 15px;
   background-color: #333333;
   font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+
+  a {
+    color: #d0baf6;
+    text-decoration: underline;
+  }
 }
 
 .sg_header_wrapper {
@@ -170,6 +175,7 @@ body {
     font-size: 12px;
     font-weight: normal;
     margin-bottom: 25px;
+    line-height: 19px;
   }
 }
 
