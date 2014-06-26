@@ -41,15 +41,15 @@ click_email_button = ->
     else if id == "order_ships_and_invoices_a"
       #04a Order Ships & Invoices
       info = "<b>Trigger:</b> Print orders fulfilled by warehouse<br>
-                    <b>Subject:</b>TCI Shipping Confirmation for Order #ORD1183"
+                    <b>Subject:</b> TCI Shipping Confirmation for Order #ORD1183"
       #Store Trigger: FinalOrder.create!(order_id: Order.last.id, shipping_method: "UPS")
       #               ShipmentMailer.shipment_confirmation(Order.last).deliver
       html = ""
       email = "/pdfs/email4a.pdf"
     else if id == "order_ships_and_invoices_b"
       #04b Order Ships & Invoices
-      info = "<b>Trigger:</b> Print Orders have returned to the Invoicing and History tabs in the store (rake task)<br>
-                    <b>Subject:</b> Your TCI Shipping Confirmation for Order #LKSDJF"
+      info = "<b>Trigger:</b> Print orders fulfilled by warehouse<br>
+                    <b>Subject:</b> Your order no. ORD756 has been fulfilled"
       #Store Trigger: FinalOrder.create!(order_id: Order.last.id, shipping_method: "UPS")
       #               ShipmentMailer.shipment_confirmation(Order.last).deliver
       html = ""
