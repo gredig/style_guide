@@ -33,8 +33,8 @@ click_email_button = ->
       email = "/pdfs/email2.pdf"
     else if id == "customer_fax_order"
       #03 When Order Entry Clicks Approve on a CSV Order
-      info = "<b>Trigger:</b> When order entry clicks approve on a CSV Order<br>
-                   <b>Subject:</b> Congratulations! Your TCI Order LKSDJF Was Successful"
+      info = "<b>Trigger:</b> Accounting clicks 'To Be Emailed' box (NetSuite) for non-web orders.<br>
+                   <b>Subject:</b> TCI: Sales Order #ORD425"
       #Store Trigger: OrderMailer.po_order_submitted(Order.last).deliver
       html = ""
       email = "/pdfs/email3.pdf"
